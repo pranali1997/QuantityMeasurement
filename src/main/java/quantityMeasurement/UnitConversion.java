@@ -2,7 +2,7 @@ package quantityMeasurement;
 
 public class UnitConversion {
     private  UnitMeasurement.UnitType unitType;
-    double feet,inch;
+    double feet,inch,yard;
 
 
 public double getUnitConversion(UnitMeasurement obj ,UnitMeasurement.UnitConv unitConv) {
@@ -31,6 +31,13 @@ public double getUnitConversion(UnitMeasurement obj ,UnitMeasurement.UnitConv un
         if (obj.unitType== UnitMeasurement.UnitType.YARD){
             inch=obj.value*36;
             return inch;
+        }
+        return obj.value;
+    }
+    else if (unitConv==unitConv.InchToYard){
+        if (obj.unitType== UnitMeasurement.UnitType.INCH){
+            yard=obj.value/36;
+            return yard;
         }
         return obj.value;
     }

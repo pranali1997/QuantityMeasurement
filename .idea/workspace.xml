@@ -40,8 +40,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/QuantityMeasurementTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="311">
-              <caret line="149" selection-start-line="149" selection-end-line="149" />
+            <state relative-caret-position="217">
+              <caret line="147" column="40" selection-start-line="147" selection-start-column="40" selection-end-line="147" selection-end-column="40" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -61,7 +61,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/quantityMeasurement/UnitMeasurement.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
+            <state relative-caret-position="-204">
               <caret line="18" column="48" lean-forward="true" selection-start-line="18" selection-start-column="48" selection-end-line="18" selection-end-column="48" />
             </state>
           </provider>
@@ -70,8 +70,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/quantityMeasurement/UnitConversion.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="294">
-              <caret line="34" column="25" selection-start-line="34" selection-start-column="25" selection-end-line="34" selection-end-column="25" />
+            <state relative-caret-position="192">
+              <caret line="41" column="25" selection-start-line="41" selection-start-column="25" selection-end-line="41" selection-end-column="25" />
             </state>
           </provider>
         </entry>
@@ -100,8 +100,8 @@
         <option value="$PROJECT_DIR$/src/main/java/quantityMeasurement/FeetMeasurement.java" />
         <option value="$PROJECT_DIR$/src/main/java/quantityMeasurement/quantityMeasureException.java" />
         <option value="$PROJECT_DIR$/src/main/java/quantityMeasurement/UnitMeasurement.java" />
-        <option value="$PROJECT_DIR$/src/main/java/quantityMeasurement/UnitConversion.java" />
         <option value="$PROJECT_DIR$/src/test/java/QuantityMeasurementTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/quantityMeasurement/UnitConversion.java" />
       </list>
     </option>
   </component>
@@ -194,7 +194,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Gradle.QuantityMeasurementTest.whenGivenOneInchAndOneYard_ShouldReturnFalse">
+  <component name="RunManager" selected="Gradle.QuantityMeasurementTest.whenGivenThirtySixInchAndOneYard_ShouldReturnTrue">
     <configuration name="QuantityMeasurementTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -255,12 +255,12 @@
       <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="QuantityMeasurementTest.whenGivenOnefeetAndTwelveInch_ShouldReturnTrue" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="QuantityMeasurementTest.whenGivenThirtySixInchAndOneYard_ShouldReturnTrue" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;QuantityMeasurementTest.whenGivenOnefeetAndTwelveInch_ShouldReturnTrue&quot;" />
+        <option name="scriptParameters" value="--tests &quot;QuantityMeasurementTest.whenGivenThirtySixInchAndOneYard_ShouldReturnTrue&quot;" />
         <option name="taskDescriptions">
           <list />
         </option>
@@ -297,11 +297,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.QuantityMeasurementTest.whenGivenThirtySixInchAndOneYard_ShouldReturnTrue" />
         <item itemvalue="Gradle.QuantityMeasurementTest.whenGivenOneInchAndOneYard_ShouldReturnFalse" />
         <item itemvalue="Gradle.QuantityMeasurementTest.whenGivenOnefeetAndOneYard_ShouldReturnFalse" />
         <item itemvalue="Gradle.QuantityMeasurementTest.whenGivenThreefeetAndOneYard_ShouldReturnTrue" />
         <item itemvalue="Gradle.QuantityMeasurementTest" />
-        <item itemvalue="Gradle.QuantityMeasurementTest.whenGivenOnefeetAndTwelveInch_ShouldReturnTrue" />
       </list>
     </recent_temporary>
   </component>
@@ -319,12 +319,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="QuantityMeasurementTest - 2020.01.28 at 17h 24m 06s.xml">
-      <configuration name="QuantityMeasurementTest" configurationId="GradleRunConfiguration" />
-    </history-entry>
-    <history-entry file="QuantityMeasurementTest_whenGivenThreefeetAndOneYard_ShouldReturnTrue - 2020.01.28 at 17h 39m 23s.xml">
-      <configuration name="QuantityMeasurementTest.whenGivenThreefeetAndOneYard_ShouldReturnTrue" configurationId="GradleRunConfiguration" />
-    </history-entry>
     <history-entry file="QuantityMeasurementTest_whenGivenThreefeetAndOneYard_ShouldReturnTrue - 2020.01.28 at 17h 39m 50s.xml">
       <configuration name="QuantityMeasurementTest.whenGivenThreefeetAndOneYard_ShouldReturnTrue" configurationId="GradleRunConfiguration" />
     </history-entry>
@@ -348,6 +342,12 @@
     </history-entry>
     <history-entry file="QuantityMeasurementTest_whenGivenOneInchAndOneYard_ShouldReturnFalse - 2020.01.28 at 17h 54m 48s.xml">
       <configuration name="QuantityMeasurementTest.whenGivenOneInchAndOneYard_ShouldReturnFalse" configurationId="GradleRunConfiguration" />
+    </history-entry>
+    <history-entry file="QuantityMeasurementTest_whenGivenThirtySixInchAndOneYard_ShouldReturnTrue - 2020.01.28 at 17h 57m 55s.xml">
+      <configuration name="QuantityMeasurementTest.whenGivenThirtySixInchAndOneYard_ShouldReturnTrue" configurationId="GradleRunConfiguration" />
+    </history-entry>
+    <history-entry file="QuantityMeasurementTest_whenGivenThirtySixInchAndOneYard_ShouldReturnTrue - 2020.01.28 at 17h 58m 10s.xml">
+      <configuration name="QuantityMeasurementTest.whenGivenThirtySixInchAndOneYard_ShouldReturnTrue" configurationId="GradleRunConfiguration" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
@@ -498,22 +498,22 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/quantityMeasurement/UnitConversion.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="294">
-          <caret line="34" column="25" selection-start-line="34" selection-start-column="25" selection-end-line="34" selection-end-column="25" />
+        <state relative-caret-position="192">
+          <caret line="41" column="25" selection-start-line="41" selection-start-column="25" selection-end-line="41" selection-end-column="25" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/quantityMeasurement/UnitMeasurement.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
+        <state relative-caret-position="-204">
           <caret line="18" column="48" lean-forward="true" selection-start-line="18" selection-start-column="48" selection-end-line="18" selection-end-column="48" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/QuantityMeasurementTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="311">
-          <caret line="149" selection-start-line="149" selection-end-line="149" />
+        <state relative-caret-position="217">
+          <caret line="147" column="40" selection-start-line="147" selection-start-column="40" selection-end-line="147" selection-end-column="40" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
