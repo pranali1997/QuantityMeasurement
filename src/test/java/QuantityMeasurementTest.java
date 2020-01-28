@@ -1,5 +1,4 @@
 import org.junit.Assert;
-import org.junit.Before;
 import org.junit.Test;
 import quantityMeasurement.UnitConversion;
 import quantityMeasurement.UnitMeasurement;
@@ -35,6 +34,7 @@ public class QuantityMeasurementTest {
         Assert.assertEquals(first, second);
 
     }
+
 //Inch Test case
 
     @Test
@@ -102,11 +102,13 @@ public class QuantityMeasurementTest {
     public void whenGivenOnefeetAndTwelveInch_ShouldReturnTrue() throws quantityMeasureException {
         UnitMeasurement first = new UnitMeasurement(UnitMeasurement.UnitType.FEET,1.0);
         UnitConversion unit = new UnitConversion();
-        double v1 = unit.getUnitConversion(first,UnitMeasurement.UnitConv.InchToFeet);
+        double v1 = unit.getUnitConversion(first,UnitMeasurement.UnitConv.FeetToInch);
         UnitMeasurement second = new UnitMeasurement(UnitMeasurement.UnitType.INCH,12.0);
-        double v2=unit.getUnitConversion(second,UnitMeasurement.UnitConv.InchToFeet);
+        double v2=unit.getUnitConversion(second,UnitMeasurement.UnitConv.FeetToInch);
         Assert.assertTrue(v1==v2);
     }
+
+    //Added Test Cases For Yard Conversion
 
     @Test
     public void whenGivenThreefeetAndOneYard_ShouldReturnTrue() throws quantityMeasureException {
@@ -122,9 +124,9 @@ public class QuantityMeasurementTest {
     public void whenGivenOnefeetAndOneYard_ShouldReturnFalse() throws quantityMeasureException {
         UnitMeasurement first = new UnitMeasurement(UnitMeasurement.UnitType.FEET,1.0);
         UnitConversion unit = new UnitConversion();
-        double v1 = unit.getUnitConversion(first,UnitMeasurement.UnitConv.YardToFeet);
+        double v1 = unit.getUnitConversion(first,UnitMeasurement.UnitConv.FeetToInch);
         UnitMeasurement second = new UnitMeasurement(UnitMeasurement.UnitType.YARD,1.0);
-        double v2=unit.getUnitConversion(second,UnitMeasurement.UnitConv.YardToFeet);
+        double v2=unit.getUnitConversion(second,UnitMeasurement.UnitConv.YardToInch);
         Assert.assertTrue(v1!=v2);
     }
 
@@ -148,24 +150,5 @@ public class QuantityMeasurementTest {
         Assert.assertTrue(v1==v2);
     }
 
-    @Test
-    public void whenGivenThirtySixInchOneYard_ShouldReturnTrue() throws quantityMeasureException {
-        UnitMeasurement first = new UnitMeasurement(UnitMeasurement.UnitType.INCH,1.0);
-        UnitConversion unit = new UnitConversion();
-        double v1 = unit.getUnitConversion(first,UnitMeasurement.UnitConv.InchToYard);
-        UnitMeasurement second = new UnitMeasurement(UnitMeasurement.UnitType.YARD,0.027777777777777777);
-        double v2=unit.getUnitConversion(second,UnitMeasurement.UnitConv.InchToYard);
-        Assert.assertTrue(v1==v2);
-    }
-    @Test
-    public void whenGivenOneYardAndThreeFeet_ShouldReturnTrue() throws quantityMeasureException {
-        UnitMeasurement first = new UnitMeasurement(UnitMeasurement.UnitType.FEET,3.0);
-        UnitConversion unit = new UnitConversion();
-        double v1 = unit.getUnitConversion(first,UnitMeasurement.UnitConv.FeetToYard);
-        UnitMeasurement second = new UnitMeasurement(UnitMeasurement.UnitType.YARD,1.0);
-        double v2=unit.getUnitConversion(second,UnitMeasurement.UnitConv.FeetToYard);
-        System.out.println(v1+"skdjxcsdjmxsdmx"+v2);
-        Assert.assertTrue(v1==v2);
-    }
 
 }

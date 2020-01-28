@@ -6,31 +6,10 @@ public class UnitConversion {
 
 
 public double getUnitConversion(UnitMeasurement obj ,UnitMeasurement.UnitConv unitConv) {
-    if (unitConv == unitConv.InchToFeet) {
-        if (obj.unitType == UnitMeasurement.UnitType.INCH) {
-            feet = obj.value/ 12;
-            return feet;
-        }
-        return obj.value;
-    }
-    else if (unitConv == unitConv.FeetToInch) {
+     if (unitConv == unitConv.FeetToInch) {
         if (obj.unitType == UnitMeasurement.UnitType.FEET) {
             inch = obj.value * 12;
             return inch;
-        }
-        return obj.value;
-    }
-    else if (unitConv==unitConv.YardToFeet) {
-        if (obj.unitType==UnitMeasurement.UnitType.YARD) {
-            feet=obj.value*3;
-            return feet;
-        }
-        return obj.value;
-    }
-    else if (unitConv==unitConv.FeetToYard){
-        if (obj.unitType== UnitMeasurement.UnitType.FEET){
-            yard=obj.value/3;
-            return yard;
         }
         return obj.value;
     }
@@ -38,13 +17,6 @@ public double getUnitConversion(UnitMeasurement obj ,UnitMeasurement.UnitConv un
         if (obj.unitType== UnitMeasurement.UnitType.YARD){
             inch=obj.value*36;
             return inch;
-        }
-        return obj.value;
-    }
-    else if (unitConv==unitConv.InchToYard){
-        if (obj.unitType== UnitMeasurement.UnitType.INCH){
-            yard=obj.value/36;
-            return yard;
         }
         return obj.value;
     }

@@ -16,20 +16,16 @@ public class UnitMeasurement {
 
     public enum UnitConv
     {
-        InchToFeet, FeetToYard, YardToFeet, YardToInch, InchToYard, FeetToInch
+        FeetToInch, YardToFeet, YardToInch
     }
 
     public UnitMeasurement(UnitType unitType, Double value) throws quantityMeasureException {
-
         try {
             this.unitType = unitType;
             this.value = value;
-
         } catch (NullPointerException e) {
             throw new quantityMeasureException(e.getMessage(), quantityMeasureException.ExceptionType.NULL_VALUE);
         }
-
-
     }
 
     @Override
@@ -43,6 +39,5 @@ public class UnitMeasurement {
                 Objects.equals(value, that.value) &&
                 unitConv == that.unitConv;
     }
-
 
 }
