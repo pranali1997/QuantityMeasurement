@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="QuantityMeasurementTest" tests="8" skipped="0" failures="0" errors="0" timestamp="2020-01-28T06:34:29" hostname="admin1-HP-EliteBook-Folio-9480m" time="0.009">
+<testsuite name="QuantityMeasurementTest" tests="8" skipped="0" failures="0" errors="0" timestamp="2020-01-28T07:09:21" hostname="admin1-HP-EliteBook-Folio-9480m" time="0.006">
   <properties/>
   <testcase name="whenGivenZeroFeet_ShouldReturnTrue" classname="QuantityMeasurementTest" time="0.002"/>
-  <testcase name="whenGivenInchValue_ShouldReturnFalse" classname="QuantityMeasurementTest" time="0.001"/>
+  <testcase name="whenGivenInchValue_ShouldReturnFalse" classname="QuantityMeasurementTest" time="0.0"/>
   <testcase name="whenGivenNullInInch_ShouldReturnFalse" classname="QuantityMeasurementTest" time="0.0"/>
   <testcase name="whenGivenFeetValue_ShouldReturnFalse" classname="QuantityMeasurementTest" time="0.0"/>
-  <testcase name="whenGivenReference_ShouldReturntrue" classname="QuantityMeasurementTest" time="0.0"/>
+  <testcase name="whenGivenReference_ShouldReturntrue" classname="QuantityMeasurementTest" time="0.001"/>
   <testcase name="whenGivenZeroInch_ShouldReturnTrue" classname="QuantityMeasurementTest" time="0.0"/>
   <testcase name="whenGivenInchObjectReference_ShouldReturntrue" classname="QuantityMeasurementTest" time="0.001"/>
   <testcase name="whenGivenNull_ShouldReturnFalse" classname="QuantityMeasurementTest" time="0.0"/>

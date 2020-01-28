@@ -7,7 +7,6 @@ public class quantityMeasureException extends Exception  {
     public ExceptionType type;
 
     public quantityMeasureException(String message, ExceptionType type) {
-
         super(message);
         this.type = type;
     }
