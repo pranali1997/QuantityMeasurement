@@ -148,4 +148,14 @@ public class QuantityMeasurementTest {
         Assert.assertTrue(v1==v2);
     }
 
+    @Test
+    public void whenGivenThirtySixInchOneYard_ShouldReturnTrue() throws quantityMeasureException {
+        UnitMeasurement first = new UnitMeasurement(UnitMeasurement.UnitType.INCH,1.0);
+        UnitConversion unit = new UnitConversion();
+        double v1 = unit.getUnitConversion(first,UnitMeasurement.UnitConv.InchToYard);
+        UnitMeasurement second = new UnitMeasurement(UnitMeasurement.UnitType.YARD,0.027777777777777777);
+        double v2=unit.getUnitConversion(second,UnitMeasurement.UnitConv.InchToYard);
+        Assert.assertTrue(v1==v2);
+    }
+
 }
