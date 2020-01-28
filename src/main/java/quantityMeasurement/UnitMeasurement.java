@@ -16,7 +16,7 @@ public class UnitMeasurement {
 
     public enum UnitConv
     {
-        InchToFeet, FeetToYard, YardToFeet, FeetToInch
+        InchToFeet, FeetToYard, YardToFeet, YardToInch, FeetToInch
     }
 
     public UnitMeasurement(UnitType unitType, Double value) throws quantityMeasureException {

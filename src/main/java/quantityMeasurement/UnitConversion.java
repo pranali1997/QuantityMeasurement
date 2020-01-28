@@ -21,14 +21,19 @@ public double getUnitConversion(UnitMeasurement obj ,UnitMeasurement.UnitConv un
         return obj.value;
     }
     else if (unitConv==unitConv.YardToFeet) {
-        if (obj.unitType==UnitMeasurement.UnitType.YARD)
-        {
+        if (obj.unitType==UnitMeasurement.UnitType.YARD) {
             feet=obj.value*3;
             return feet;
         }
         return obj.value;
     }
-
+    else if (unitConv==unitConv.YardToInch){
+        if (obj.unitType== UnitMeasurement.UnitType.YARD){
+            inch=obj.value*36;
+            return inch;
+        }
+        return obj.value;
+    }
     return 0;
 }
 }
