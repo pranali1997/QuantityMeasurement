@@ -108,6 +108,13 @@ public class QuantityMeasurementTest {
         Assert.assertTrue(v1==v2);
     }
 
-
-
+    @Test
+    public void whenGivenThreefeetAndOneYard_ShouldReturnTrue() throws quantityMeasureException {
+        UnitMeasurement first = new UnitMeasurement(UnitMeasurement.UnitType.FEET,3.0);
+        UnitConversion unit = new UnitConversion();
+        double v1 = unit.getUnitConversion(first,UnitMeasurement.UnitConv.YardToFeet);
+        UnitMeasurement second = new UnitMeasurement(UnitMeasurement.UnitType.YARD,1.0);
+        double v2=unit.getUnitConversion(second,UnitMeasurement.UnitConv.YardToFeet);
+        Assert.assertTrue(v1==v2);
+    }
 }

@@ -20,6 +20,15 @@ public double getUnitConversion(UnitMeasurement obj ,UnitMeasurement.UnitConv un
         }
         return obj.value;
     }
+    else if (unitConv==unitConv.YardToFeet) {
+        if (obj.unitType==UnitMeasurement.UnitType.YARD)
+        {
+            feet=obj.value*3;
+            return feet;
+        }
+        return obj.value;
+    }
+
     return 0;
 }
 }
