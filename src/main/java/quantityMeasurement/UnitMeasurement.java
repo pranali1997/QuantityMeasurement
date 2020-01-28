@@ -4,11 +4,11 @@ import java.util.Objects;
 
 public class UnitMeasurement {
 
-    private UnitType unitType;
-    private Double value;
+    public UnitType unitType;
+    public Double value;
 
     double feet,inch;
-    private UnitConv unitConv;
+    public UnitConv unitConv;
 
     public enum UnitType {
         FEET, INCH
@@ -29,26 +29,8 @@ public class UnitMeasurement {
             throw new quantityMeasureException(e.getMessage(), quantityMeasureException.ExceptionType.NULL_VALUE);
         }
 
+
     }
-
-    public double convertUnitMeasureInchToFeet(UnitConv unitConv) {
-        if (unitConv == unitConv.InchToFeet) {
-            if (unitType == UnitType.INCH) {
-                feet = value / 12;
-                return feet;
-            }
-            return value;
-        }
-        else if (unitConv == unitConv.FeetToInch) {
-            if (unitType == UnitType.FEET) {
-                inch = value * 12;
-                return inch;
-            }
-            return value;
-        }
-        return 0;
-        }
-
 
     @Override
     public boolean equals(Object o) {

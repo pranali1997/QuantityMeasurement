@@ -1,5 +1,7 @@
 import org.junit.Assert;
+import org.junit.Before;
 import org.junit.Test;
+import quantityMeasurement.UnitConversion;
 import quantityMeasurement.UnitMeasurement;
 import quantityMeasurement.quantityMeasureException;
 
@@ -68,37 +70,42 @@ public class QuantityMeasurementTest {
     @Test
     public void whenGivenZeroFeetAndZeroInch_ShouldReturnZeroInch() throws quantityMeasureException {
         UnitMeasurement first = new UnitMeasurement(UnitMeasurement.UnitType.FEET,0.0);
-        double v1 = first.convertUnitMeasureInchToFeet(UnitMeasurement.UnitConv.FeetToInch);
+        UnitConversion unit = new UnitConversion();
+        double v1 = unit.getUnitConversion(first,UnitMeasurement.UnitConv.FeetToInch);
         UnitMeasurement second = new UnitMeasurement(UnitMeasurement.UnitType.INCH,0.0);
-       double v2=second.convertUnitMeasureInchToFeet(UnitMeasurement.UnitConv.FeetToInch);
+       double v2=unit.getUnitConversion(second,UnitMeasurement.UnitConv.FeetToInch);
         Assert.assertTrue(v1==v2);
     }
 
     @Test
     public void whenGivenOneFeetAndOneInch_ShouldReturnFalseInch() throws quantityMeasureException {
         UnitMeasurement first = new UnitMeasurement(UnitMeasurement.UnitType.FEET,1.0);
-        double v1 = first.convertUnitMeasureInchToFeet(UnitMeasurement.UnitConv.FeetToInch);
+        UnitConversion unit = new UnitConversion();
+        double v1 = unit.getUnitConversion(first,UnitMeasurement.UnitConv.FeetToInch);
         UnitMeasurement second = new UnitMeasurement(UnitMeasurement.UnitType.INCH,1.0);
-        double v2=second.convertUnitMeasureInchToFeet(UnitMeasurement.UnitConv.FeetToInch);
+        double v2=unit.getUnitConversion(second,UnitMeasurement.UnitConv.FeetToInch);
        Assert.assertTrue(v1!=v2);
     }
+
 
     @Test
     public void whenGivenOneInchAndOneFeet_ShouldReturnFalseInch() throws quantityMeasureException {
         UnitMeasurement first = new UnitMeasurement(UnitMeasurement.UnitType.FEET,1.0);
-        double v1 = first.convertUnitMeasureInchToFeet(UnitMeasurement.UnitConv.FeetToInch);
+        UnitConversion unit = new UnitConversion();
+        double v1 = unit.getUnitConversion(first,UnitMeasurement.UnitConv.FeetToInch);
         UnitMeasurement second = new UnitMeasurement(UnitMeasurement.UnitType.INCH,1.0);
-        double v2=second.convertUnitMeasureInchToFeet(UnitMeasurement.UnitConv.FeetToInch);
+        double v2=unit.getUnitConversion(second,UnitMeasurement.UnitConv.FeetToInch);
         Assert.assertTrue(v1!=v2);
     }
 
     @Test
     public void whenGivenOnefeetAndTwelveInch_ShouldReturnTrue() throws quantityMeasureException {
         UnitMeasurement first = new UnitMeasurement(UnitMeasurement.UnitType.FEET,1.0);
-        double v1 = first.convertUnitMeasureInchToFeet(UnitMeasurement.UnitConv.InchToFeet);
+        UnitConversion unit = new UnitConversion();
+        double v1 = unit.getUnitConversion(first,UnitMeasurement.UnitConv.InchToFeet);
         UnitMeasurement second = new UnitMeasurement(UnitMeasurement.UnitType.INCH,12.0);
-        double v2=second.convertUnitMeasureInchToFeet(UnitMeasurement.UnitConv.InchToFeet);
-        Assert.assertEquals(v1,v2,0.0);
+        double v2=unit.getUnitConversion(second,UnitMeasurement.UnitConv.InchToFeet);
+        Assert.assertTrue(v1==v2);
     }
 
 
