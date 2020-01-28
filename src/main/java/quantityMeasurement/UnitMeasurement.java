@@ -26,6 +26,17 @@ public class UnitMeasurement {
 
     }
 
+    public double convertUnitMeasureInchToFeet(){
+
+        if (unitType==UnitType.INCH){
+            feet=value/12;
+            return feet;
+        }
+        if (unitType==UnitType.FEET){
+            return value;
+        }
+        return 0;
+    }
     public double convertedUnitMeasurement(){
         if (unitType==UnitType.FEET){
              inch=value*12;

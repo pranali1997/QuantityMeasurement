@@ -85,11 +85,20 @@ public class QuantityMeasurementTest {
 
     @Test
     public void whenGivenOneInchAndOneFeet_ShouldReturnFalseInch() throws quantityMeasureException {
-        UnitMeasurement first = new UnitMeasurement(UnitMeasurement.UnitType.INCH,1.0);
+        UnitMeasurement first = new UnitMeasurement(UnitMeasurement.UnitType.FEET,1.0);
         double v1 = first.convertedUnitMeasurement();
-        UnitMeasurement second = new UnitMeasurement(UnitMeasurement.UnitType.FEET,1.0);
+        UnitMeasurement second = new UnitMeasurement(UnitMeasurement.UnitType.INCH,1.0);
         double v2=second.convertedUnitMeasurement();
         Assert.assertTrue(v1!=v2);
+    }
+
+    @Test
+    public void whenGivenOnefeetAndTwelveInch_ShouldReturnTrue() throws quantityMeasureException {
+        UnitMeasurement first = new UnitMeasurement(UnitMeasurement.UnitType.FEET,1.0);
+        double v1 = first.convertUnitMeasureInchToFeet();
+        UnitMeasurement second = new UnitMeasurement(UnitMeasurement.UnitType.INCH,12.0);
+        double v2=second.convertUnitMeasureInchToFeet();
+        Assert.assertEquals(v1,v2,0.0);
     }
 
 
