@@ -2,10 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="74109101-9562-4432-b01f-3f0261b1b22f" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/quantityMeasurement/FeetMeasurement.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/quantityMeasurement/InchMeasurement.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/quantityMeasurement/UnitMeasurement.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/quantityMeasurement/UnitMeasurement.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/QuantityMeasurementTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/QuantityMeasurementTest.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -42,8 +38,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/QuantityMeasurementTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="139">
-              <caret line="72" selection-start-line="72" selection-end-line="72" />
+            <state relative-caret-position="170">
+              <caret line="81" column="52" lean-forward="true" selection-start-line="81" selection-start-column="52" selection-end-line="81" selection-end-column="52" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -63,8 +59,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/quantityMeasurement/UnitMeasurement.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="31" selection-start-line="31" selection-end-line="31" />
+            <state relative-caret-position="156">
+              <caret line="34" column="25" lean-forward="true" selection-start-line="34" selection-start-column="25" selection-end-line="34" selection-end-column="25" />
             </state>
           </provider>
         </entry>
@@ -92,8 +88,8 @@
         <option value="$PROJECT_DIR$/src/main/java/quantityMeasurement/UnitType.java" />
         <option value="$PROJECT_DIR$/src/main/java/quantityMeasurement/FeetMeasurement.java" />
         <option value="$PROJECT_DIR$/src/main/java/quantityMeasurement/quantityMeasureException.java" />
-        <option value="$PROJECT_DIR$/src/test/java/QuantityMeasurementTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/quantityMeasurement/UnitMeasurement.java" />
+        <option value="$PROJECT_DIR$/src/test/java/QuantityMeasurementTest.java" />
       </list>
     </option>
   </component>
@@ -186,7 +182,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Gradle.QuantityMeasurementTest.whenGivenFeetValueZero_ShouldReturnInchValueZero">
+  <component name="RunManager" selected="Gradle.QuantityMeasurementTest.whenGivenOneFeetAndOneInch_ShouldReturnFalseInch">
     <configuration name="QuantityMeasurementTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -227,12 +223,12 @@
       <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="QuantityMeasurementTest.whenGivenFeetValue_ShouldReturnFalse" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="QuantityMeasurementTest.whenGivenOneFeetAndOneInch_ShouldReturnFalseInch" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;QuantityMeasurementTest.whenGivenFeetValue_ShouldReturnFalse&quot;" />
+        <option name="scriptParameters" value="--tests &quot;QuantityMeasurementTest.whenGivenOneFeetAndOneInch_ShouldReturnFalseInch&quot;" />
         <option name="taskDescriptions">
           <list />
         </option>
@@ -247,12 +243,12 @@
       <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="QuantityMeasurementTest.whenGivenNullInInch_ShouldReturnFalse" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="QuantityMeasurementTest.whenGivenZeroFeetAndZeroInch_ShouldReturnZeroInch" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;QuantityMeasurementTest.whenGivenNullInInch_ShouldReturnFalse&quot;" />
+        <option name="scriptParameters" value="--tests &quot;QuantityMeasurementTest.whenGivenZeroFeetAndZeroInch_ShouldReturnZeroInch&quot;" />
         <option name="taskDescriptions">
           <list />
         </option>
@@ -289,11 +285,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.QuantityMeasurementTest.whenGivenOneFeetAndOneInch_ShouldReturnFalseInch" />
+        <item itemvalue="Gradle.QuantityMeasurementTest.whenGivenZeroFeetAndZeroInch_ShouldReturnZeroInch" />
         <item itemvalue="Gradle.QuantityMeasurementTest.whenGivenFeetValueZero_ShouldReturnInchValueZero" />
         <item itemvalue="Gradle.QuantityMeasurementTest.whenGivenZeroInch_ShouldReturnTrue" />
         <item itemvalue="Gradle.QuantityMeasurementTest" />
-        <item itemvalue="Gradle.QuantityMeasurementTest.whenGivenNullInInch_ShouldReturnFalse" />
-        <item itemvalue="Gradle.QuantityMeasurementTest.whenGivenFeetValue_ShouldReturnFalse" />
       </list>
     </recent_temporary>
   </component>
@@ -311,41 +307,42 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="QuantityMeasurementTest_whenGivenFeetValueZero_ShouldReturnInchValueZero - 2020.01.28 at 13h 10m 53s.xml">
+    <history-entry file="QuantityMeasurementTest_whenGivenFeetValueZero_ShouldReturnInchValueZero - 2020.01.28 at 13h 21m 17s.xml">
       <configuration name="QuantityMeasurementTest.whenGivenFeetValueZero_ShouldReturnInchValueZero" configurationId="GradleRunConfiguration" />
     </history-entry>
-    <history-entry file="QuantityMeasurementTest_whenGivenFeetValueZero_ShouldReturnInchValueZero - 2020.01.28 at 13h 11m 21s.xml">
+    <history-entry file="QuantityMeasurementTest_whenGivenFeetValueZero_ShouldReturnInchValueZero - 2020.01.28 at 13h 21m 31s.xml">
       <configuration name="QuantityMeasurementTest.whenGivenFeetValueZero_ShouldReturnInchValueZero" configurationId="GradleRunConfiguration" />
     </history-entry>
-    <history-entry file="QuantityMeasurementTest_whenGivenZeroInch_ShouldReturnTrue - 2020.01.28 at 13h 11m 28s.xml">
-      <configuration name="QuantityMeasurementTest.whenGivenZeroInch_ShouldReturnTrue" configurationId="GradleRunConfiguration" />
-    </history-entry>
-    <history-entry file="QuantityMeasurementTest_whenGivenZeroInch_ShouldReturnTrue - 2020.01.28 at 13h 12m 15s.xml">
-      <configuration name="QuantityMeasurementTest.whenGivenZeroInch_ShouldReturnTrue" configurationId="GradleRunConfiguration" />
-    </history-entry>
-    <history-entry file="QuantityMeasurementTest_whenGivenFeetValueZero_ShouldReturnInchValueZero - 2020.01.28 at 13h 12m 18s.xml">
+    <history-entry file="QuantityMeasurementTest_whenGivenFeetValueZero_ShouldReturnInchValueZero - 2020.01.28 at 13h 21m 58s.xml">
       <configuration name="QuantityMeasurementTest.whenGivenFeetValueZero_ShouldReturnInchValueZero" configurationId="GradleRunConfiguration" />
     </history-entry>
-    <history-entry file="QuantityMeasurementTest_whenGivenFeetValueZero_ShouldReturnInchValueZero - 2020.01.28 at 13h 12m 49s.xml">
+    <history-entry file="QuantityMeasurementTest_whenGivenFeetValueZero_ShouldReturnInchValueZero - 2020.01.28 at 13h 22m 26s.xml">
       <configuration name="QuantityMeasurementTest.whenGivenFeetValueZero_ShouldReturnInchValueZero" configurationId="GradleRunConfiguration" />
     </history-entry>
-    <history-entry file="QuantityMeasurementTest_whenGivenFeetValueZero_ShouldReturnInchValueZero - 2020.01.28 at 13h 15m 41s.xml">
-      <configuration name="QuantityMeasurementTest.whenGivenFeetValueZero_ShouldReturnInchValueZero" configurationId="GradleRunConfiguration" />
+    <history-entry file="QuantityMeasurementTest_whenGivenZeroFeetAndZeroInch_ShouldReturnZeroInch - 2020.01.28 at 13h 23m 28s.xml">
+      <configuration name="QuantityMeasurementTest.whenGivenZeroFeetAndZeroInch_ShouldReturnZeroInch" configurationId="GradleRunConfiguration" />
     </history-entry>
-    <history-entry file="QuantityMeasurementTest_whenGivenFeetValueZero_ShouldReturnInchValueZero - 2020.01.28 at 13h 15m 51s.xml">
-      <configuration name="QuantityMeasurementTest.whenGivenFeetValueZero_ShouldReturnInchValueZero" configurationId="GradleRunConfiguration" />
+    <history-entry file="QuantityMeasurementTest_whenGivenOneFeetAndOneInch_ShouldReturnFalseInch - 2020.01.28 at 13h 28m 21s.xml">
+      <configuration name="QuantityMeasurementTest.whenGivenOneFeetAndOneInch_ShouldReturnFalseInch" configurationId="GradleRunConfiguration" />
     </history-entry>
-    <history-entry file="QuantityMeasurementTest_whenGivenFeetValueZero_ShouldReturnInchValueZero - 2020.01.28 at 13h 17m 31s.xml">
-      <configuration name="QuantityMeasurementTest.whenGivenFeetValueZero_ShouldReturnInchValueZero" configurationId="GradleRunConfiguration" />
+    <history-entry file="QuantityMeasurementTest_whenGivenOneFeetAndOneInch_ShouldReturnFalseInch - 2020.01.28 at 13h 30m 32s.xml">
+      <configuration name="QuantityMeasurementTest.whenGivenOneFeetAndOneInch_ShouldReturnFalseInch" configurationId="GradleRunConfiguration" />
     </history-entry>
-    <history-entry file="QuantityMeasurementTest_whenGivenFeetValueZero_ShouldReturnInchValueZero - 2020.01.28 at 13h 17m 38s.xml">
-      <configuration name="QuantityMeasurementTest.whenGivenFeetValueZero_ShouldReturnInchValueZero" configurationId="GradleRunConfiguration" />
+    <history-entry file="QuantityMeasurementTest_whenGivenOneFeetAndOneInch_ShouldReturnFalseInch - 2020.01.28 at 13h 30m 43s.xml">
+      <configuration name="QuantityMeasurementTest.whenGivenOneFeetAndOneInch_ShouldReturnFalseInch" configurationId="GradleRunConfiguration" />
+    </history-entry>
+    <history-entry file="QuantityMeasurementTest_whenGivenOneFeetAndOneInch_ShouldReturnFalseInch - 2020.01.28 at 13h 30m 52s.xml">
+      <configuration name="QuantityMeasurementTest.whenGivenOneFeetAndOneInch_ShouldReturnFalseInch" configurationId="GradleRunConfiguration" />
+    </history-entry>
+    <history-entry file="QuantityMeasurementTest_whenGivenOneFeetAndOneInch_ShouldReturnFalseInch - 2020.01.28 at 13h 31m 07s.xml">
+      <configuration name="QuantityMeasurementTest.whenGivenOneFeetAndOneInch_ShouldReturnFalseInch" configurationId="GradleRunConfiguration" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
     <frame x="67" y="25" width="1299" height="743" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25379092" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25379092" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -355,8 +352,8 @@
       <window_info id="Favorites" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32899022" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.3485342" />
-      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.39739415" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.3485342" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.39739415" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -392,15 +389,9 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/QuantityMeasurementTest.java</url>
-          <line>70</line>
+          <line>69</line>
           <properties />
           <option name="timeStamp" value="5" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/QuantityMeasurementTest.java</url>
-          <line>72</line>
-          <properties />
-          <option name="timeStamp" value="6" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
@@ -456,8 +447,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/QuantityMeasurementTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="139">
-          <caret line="72" selection-start-line="72" selection-end-line="72" />
+        <state relative-caret-position="170">
+          <caret line="81" column="52" lean-forward="true" selection-start-line="81" selection-start-column="52" selection-end-line="81" selection-end-column="52" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -466,8 +457,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/quantityMeasurement/UnitMeasurement.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="31" selection-start-line="31" selection-end-line="31" />
+        <state relative-caret-position="156">
+          <caret line="34" column="25" lean-forward="true" selection-start-line="34" selection-start-column="25" selection-end-line="34" selection-end-column="25" />
         </state>
       </provider>
     </entry>
