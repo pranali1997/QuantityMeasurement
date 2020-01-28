@@ -83,4 +83,16 @@ public class QuantityMeasurementTest {
        Assert.assertTrue(v1!=v2);
     }
 
+    @Test
+    public void whenGivenOneInchAndOneFeet_ShouldReturnFalseInch() throws quantityMeasureException {
+        UnitMeasurement first = new UnitMeasurement(UnitMeasurement.UnitType.INCH,1.0);
+        double v1 = first.convertedUnitMeasurement();
+        UnitMeasurement second = new UnitMeasurement(UnitMeasurement.UnitType.FEET,1.0);
+        double v2=second.convertedUnitMeasurement();
+        Assert.assertTrue(v1!=v2);
+    }
+
+
+
+
 }
