@@ -62,4 +62,16 @@ public class QuantityMeasurementTest {
         UnitMeasurement second = new UnitMeasurement(UnitMeasurement.UnitType.INCH,1.0);
         Assert.assertEquals(first, second);
     }
+
+    //Test Case For Feet To Inch
+
+    @Test
+    public void whenGivenZeroFeetAndZeroInch_ShouldReturnZeroInch() throws quantityMeasureException {
+        UnitMeasurement first = new UnitMeasurement(UnitMeasurement.UnitType.FEET,0.0);
+        double v1 = first.convertedUnitMeasurement();
+        UnitMeasurement second = new UnitMeasurement(UnitMeasurement.UnitType.INCH,0.0);
+       double v2=second.convertedUnitMeasurement();
+       Assert.assertEquals(v1,v2,0.0);
+    }
+
 }
