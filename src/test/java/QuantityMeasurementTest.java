@@ -157,5 +157,15 @@ public class QuantityMeasurementTest {
         double v2=unit.getUnitConversion(second,UnitMeasurement.UnitConv.InchToYard);
         Assert.assertTrue(v1==v2);
     }
+    @Test
+    public void whenGivenOneYardAndThreeFeet_ShouldReturnTrue() throws quantityMeasureException {
+        UnitMeasurement first = new UnitMeasurement(UnitMeasurement.UnitType.FEET,3.0);
+        UnitConversion unit = new UnitConversion();
+        double v1 = unit.getUnitConversion(first,UnitMeasurement.UnitConv.FeetToYard);
+        UnitMeasurement second = new UnitMeasurement(UnitMeasurement.UnitType.YARD,1.0);
+        double v2=unit.getUnitConversion(second,UnitMeasurement.UnitConv.FeetToYard);
+        System.out.println(v1+"skdjxcsdjmxsdmx"+v2);
+        Assert.assertTrue(v1==v2);
+    }
 
 }

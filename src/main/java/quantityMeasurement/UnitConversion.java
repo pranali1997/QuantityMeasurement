@@ -27,6 +27,13 @@ public double getUnitConversion(UnitMeasurement obj ,UnitMeasurement.UnitConv un
         }
         return obj.value;
     }
+    else if (unitConv==unitConv.FeetToYard){
+        if (obj.unitType== UnitMeasurement.UnitType.FEET){
+            yard=obj.value/3;
+            return yard;
+        }
+        return obj.value;
+    }
     else if (unitConv==unitConv.YardToInch){
         if (obj.unitType== UnitMeasurement.UnitType.YARD){
             inch=obj.value*36;
