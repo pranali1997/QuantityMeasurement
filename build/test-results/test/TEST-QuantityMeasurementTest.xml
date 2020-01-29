@@ -1,22 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="QuantityMeasurementTest" tests="16" skipped="0" failures="0" errors="0" timestamp="2020-01-28T13:20:50" hostname="admin1-HP-EliteBook-Folio-9480m" time="0.01">
+<testsuite name="QuantityMeasurementTest" tests="17" skipped="0" failures="0" errors="0" timestamp="2020-01-29T04:09:02" hostname="admin1-HP-EliteBook-Folio-9480m" time="0.02">
   <properties/>
-  <testcase name="whenGivenThirtySixInchAndOneYard_ShouldReturnTrue" classname="QuantityMeasurementTest" time="0.003"/>
+  <testcase name="whenGivenThirtySixInchAndOneYard_ShouldReturnTrue" classname="QuantityMeasurementTest" time="0.002"/>
   <testcase name="whenGivenOneInchAndOneFeet_ShouldReturnFalseInch" classname="QuantityMeasurementTest" time="0.0"/>
-  <testcase name="whenGivenZeroFeetAndZeroInch_ShouldReturnZeroInch" classname="QuantityMeasurementTest" time="0.001"/>
-  <testcase name="whenGivenZeroFeet_ShouldReturnTrue" classname="QuantityMeasurementTest" time="0.0"/>
-  <testcase name="whenGivenOnefeetAndTwelveInch_ShouldReturnTrue" classname="QuantityMeasurementTest" time="0.001"/>
+  <testcase name="whenGivenZeroFeetAndZeroInch_ShouldReturnZeroInch" classname="QuantityMeasurementTest" time="0.002"/>
+  <testcase name="whenGivenZeroFeet_ShouldReturnTrue" classname="QuantityMeasurementTest" time="0.001"/>
+  <testcase name="whenGivenOnefeetAndTwelveInch_ShouldReturnTrue" classname="QuantityMeasurementTest" time="0.0"/>
   <testcase name="whenGivenOnefeetAndOneYard_ShouldReturnFalse" classname="QuantityMeasurementTest" time="0.0"/>
   <testcase name="whenGivenInchValue_ShouldReturnFalse" classname="QuantityMeasurementTest" time="0.0"/>
   <testcase name="whenGivenNullInInch_ShouldReturnFalse" classname="QuantityMeasurementTest" time="0.0"/>
   <testcase name="whenGivenFeetValue_ShouldReturnFalse" classname="QuantityMeasurementTest" time="0.0"/>
-  <testcase name="whenGivenReference_ShouldReturntrue" classname="QuantityMeasurementTest" time="0.001"/>
-  <testcase name="whenGivenOneInchAndOneYard_ShouldReturnFalse" classname="QuantityMeasurementTest" time="0.0"/>
+  <testcase name="whenGivenTwoInchAndFiveCentimeter_ShouldReturnTrue" classname="QuantityMeasurementTest" time="0.0"/>
+  <testcase name="whenGivenReference_ShouldReturntrue" classname="QuantityMeasurementTest" time="0.0"/>
+  <testcase name="whenGivenOneInchAndOneYard_ShouldReturnFalse" classname="QuantityMeasurementTest" time="0.001"/>
   <testcase name="whenGivenZeroInch_ShouldReturnTrue" classname="QuantityMeasurementTest" time="0.0"/>
-  <testcase name="whenGivenOneFeetAndOneInch_ShouldReturnFalseInch" classname="QuantityMeasurementTest" time="0.0"/>
-  <testcase name="whenGivenInchObjectReference_ShouldReturntrue" classname="QuantityMeasurementTest" time="0.0"/>
-  <testcase name="whenGivenThreefeetAndOneYard_ShouldReturnTrue" classname="QuantityMeasurementTest" time="0.0"/>
-  <testcase name="whenGivenNull_ShouldReturnFalse" classname="QuantityMeasurementTest" time="0.001"/>
+  <testcase name="whenGivenOneFeetAndOneInch_ShouldReturnFalseInch" classname="QuantityMeasurementTest" time="0.001"/>
+  <testcase name="whenGivenInchObjectReference_ShouldReturntrue" classname="QuantityMeasurementTest" time="0.001"/>
+  <testcase name="whenGivenThreefeetAndOneYard_ShouldReturnTrue" classname="QuantityMeasurementTest" time="0.001"/>
+  <testcase name="whenGivenNull_ShouldReturnFalse" classname="QuantityMeasurementTest" time="0.0"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>
