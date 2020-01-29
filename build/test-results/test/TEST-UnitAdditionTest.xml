@@ -1,7 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="UnitAdditionTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2020-01-29T11:38:51" hostname="admin1-HP-EliteBook-Folio-9480m" time="0.003">
+<testsuite name="UnitAdditionTest" tests="7" skipped="0" failures="0" errors="0" timestamp="2020-01-29T12:09:36" hostname="admin1-HP-EliteBook-Folio-9480m" time="0.006">
   <properties/>
-  <testcase name="whenGivenTonneAndGram_ShouldReturnAdditionInKilogram" classname="UnitAdditionTest" time="0.003"/>
+  <testcase name="whenGivenLitreAndMiliLitre_ShouldReturnAdditionInLitre" classname="UnitAdditionTest" time="0.003"/>
+  <testcase name="whenGivenOneFeetOneFeetValues_ShouldReturnAdditionInInch" classname="UnitAdditionTest" time="0.0"/>
+  <testcase name="whenGivenTonneAndGram_ShouldReturnAdditionInKilogram" classname="UnitAdditionTest" time="0.0"/>
+  <testcase name="whenGivenGallonAndLitre_ShouldReturnAdditionInLitre" classname="UnitAdditionTest" time="0.0"/>
+  <testcase name="whenGivenOneFeetTwoInchValues_ShouldReturnAdditionInInch" classname="UnitAdditionTest" time="0.0"/>
+  <testcase name="whenGivenTwoInchValues_ShouldReturnAdditionInInch" classname="UnitAdditionTest" time="0.0"/>
+  <testcase name="whenGivenTwoInchTwoPointFiveCm_ShouldReturnAdditionInInch" classname="UnitAdditionTest" time="0.0"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

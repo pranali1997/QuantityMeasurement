@@ -41,30 +41,16 @@ public class UnitConversion {
          }
          return obj.value;
      }
-     else if (unitConv==unitConv.GramToKilogram){
-         if (obj.unitType== UnitMeasurement.UnitType.GRAM){
-             kilogram=obj.value/1000.0;
-             return kilogram;
-         }
-         return obj.value;
-     }
-     else if (unitConv==unitConv.TonneToKilogram){
-         if (obj.unitType== UnitMeasurement.UnitType.Tonne){
-             kilogram=obj.value*1000.0;
-             return kilogram;
-         }
-         return obj.value;
-     }
      else if (unitConv==unitConv.TonneAndGmToKilogram){
-         if (obj.unitType== UnitMeasurement.UnitType.Tonne){
+         if (obj.unitType== UnitMeasurement.UnitType.Tonne ){
              kilogram=obj.value*1000.0;
              return kilogram;
          }
-         else
-             kilogram=obj.value/1000.0;
+         else  if (obj.unitType== UnitMeasurement.UnitType.GRAM ){
+             kilogram = obj.value / 1000.0;
              return kilogram;
-
-
+         }
+         return obj.value;
      }
 
 

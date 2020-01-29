@@ -183,9 +183,9 @@ public class QuantityMeasurementTest {
     public void whenGivenOnekgAndThousandGrams_ShouldReturnTrue() throws quantityMeasureException {
         UnitMeasurement first = new UnitMeasurement(UnitMeasurement.UnitType.KILOGRAM,  1.0);
         UnitConversion unit = new UnitConversion();
-        double v1 = unit.getUnitConversion(first,UnitMeasurement.UnitConv.GramToKilogram);
+        double v1 = unit.getUnitConversion(first,UnitMeasurement.UnitConv.TonneAndGmToKilogram);
         UnitMeasurement second = new UnitMeasurement(UnitMeasurement.UnitType.GRAM,1000.0);
-        double v2=unit.getUnitConversion(second,UnitMeasurement.UnitConv.GramToKilogram);
+        double v2=unit.getUnitConversion(second,UnitMeasurement.UnitConv.TonneAndGmToKilogram);
         Assert.assertTrue(v1==v2);
     }
 
@@ -194,9 +194,9 @@ public class QuantityMeasurementTest {
     public void whenGivenOneTonneAndThousandKilograms_ShouldReturnTrue() throws quantityMeasureException {
         UnitMeasurement first = new UnitMeasurement(UnitMeasurement.UnitType.Tonne,  1.0);
         UnitConversion unit = new UnitConversion();
-        double v1 = unit.getUnitConversion(first,UnitMeasurement.UnitConv.TonneToKilogram);
+        double v1 = unit.getUnitConversion(first,UnitMeasurement.UnitConv.TonneAndGmToKilogram);
         UnitMeasurement second = new UnitMeasurement(UnitMeasurement.UnitType.KILOGRAM,1000.0);
-        double v2=unit.getUnitConversion(second,UnitMeasurement.UnitConv.TonneToKilogram);
+        double v2=unit.getUnitConversion(second,UnitMeasurement.UnitConv.TonneAndGmToKilogram);
         Assert.assertTrue(v1==v2);
     }
 
