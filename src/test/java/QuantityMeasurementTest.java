@@ -170,7 +170,7 @@ public class QuantityMeasurementTest {
     }
 
     @Test
-    public void whenGivenOneLitreAndThousandMililiter_ShouldReturnITrue() throws quantityMeasureException {
+    public void whenGivenOneLitreAndThousandMililiter_ShouldReturnTrue() throws quantityMeasureException {
         UnitMeasurement first = new UnitMeasurement(UnitMeasurement.UnitType.LITRE,  1.0);
         UnitConversion unit = new UnitConversion();
         double v1 = unit.getUnitConversion(first,UnitMeasurement.UnitConv.MililitreToLitre);
@@ -178,5 +178,17 @@ public class QuantityMeasurementTest {
         double v2=unit.getUnitConversion(second,UnitMeasurement.UnitConv.MililitreToLitre);
         Assert.assertTrue(v1==v2);
     }
+
+    @Test
+    public void whenGivenOnekgAndThousandGrams_ShouldReturnTrue() throws quantityMeasureException {
+        UnitMeasurement first = new UnitMeasurement(UnitMeasurement.UnitType.KILOGRAM,  1.0);
+        UnitConversion unit = new UnitConversion();
+        double v1 = unit.getUnitConversion(first,UnitMeasurement.UnitConv.GramToKilogram);
+        UnitMeasurement second = new UnitMeasurement(UnitMeasurement.UnitType.GRAM,1000.0);
+        double v2=unit.getUnitConversion(second,UnitMeasurement.UnitConv.GramToKilogram);
+        Assert.assertTrue(v1==v2);
+    }
+
+
 
 }

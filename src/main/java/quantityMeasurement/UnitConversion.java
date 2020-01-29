@@ -3,7 +3,7 @@ package quantityMeasurement;
 public class UnitConversion {
 
     double feet,inch,yard, centimeter,litre;
-    private double mililitre;
+    private double kilogram;
 
     public double getUnitConversion(UnitMeasurement obj ,UnitMeasurement.UnitConv unitConv) {
      if (unitConv == unitConv.FeetToInch) {
@@ -38,6 +38,13 @@ public class UnitConversion {
          if(obj.unitType==UnitMeasurement.UnitType.MILILITER){
              litre =obj.value/1000.0;
              return litre;
+         }
+         return obj.value;
+     }
+     else if (unitConv==unitConv.GramToKilogram){
+         if (obj.unitType== UnitMeasurement.UnitType.GRAM){
+             kilogram=obj.value/1000.0;
+             return kilogram;
          }
          return obj.value;
      }
