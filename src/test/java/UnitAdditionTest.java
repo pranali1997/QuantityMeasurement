@@ -1,7 +1,6 @@
 import org.junit.Assert;
 import org.junit.Test;
 import quantityMeasurement.UnitAddition;
-import quantityMeasurement.UnitConversion;
 import quantityMeasurement.UnitMeasurement;
 import quantityMeasurement.quantityMeasureException;
 

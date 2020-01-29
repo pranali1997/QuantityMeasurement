@@ -154,11 +154,19 @@ public class QuantityMeasurementTest {
     public void whenGivenTwoInchAndFiveCentimeter_ShouldReturnTrue() throws quantityMeasureException {
         UnitMeasurement first = new UnitMeasurement(UnitMeasurement.UnitType.INCH,2.0);
         UnitConversion unit = new UnitConversion();
-        double v1 = unit.getUnitConversion(first,UnitMeasurement.UnitConv.InchToCentiemter);
+        double v1 = unit.getUnitConversion(first,UnitMeasurement.UnitConv.CentimeterToInch);
         UnitMeasurement second = new UnitMeasurement(UnitMeasurement.UnitType.CENTIMETER,5.0);
-        double v2=unit.getUnitConversion(second,UnitMeasurement.UnitConv.InchToCentiemter);
+        double v2=unit.getUnitConversion(second,UnitMeasurement.UnitConv.CentimeterToInch);
         Assert.assertTrue(v1==v2);
     }
 
-
+    @Test
+    public void whenGivenOneGallon_ShouldReturnInLitres() throws quantityMeasureException {
+        UnitMeasurement first = new UnitMeasurement(UnitMeasurement.UnitType.Gallon,  1.0);
+        UnitConversion unit = new UnitConversion();
+        double v1 = unit.getUnitConversion(first,UnitMeasurement.UnitConv.GallonToLitre);
+        UnitMeasurement second = new UnitMeasurement(UnitMeasurement.UnitType.Litre,3.785);
+        double v2=unit.getUnitConversion(second,UnitMeasurement.UnitConv.GallonToLitre);
+        Assert.assertTrue(v1==v2);
+    }
 }

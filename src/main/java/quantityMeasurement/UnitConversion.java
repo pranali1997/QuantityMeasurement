@@ -2,7 +2,7 @@ package quantityMeasurement;
 
 public class UnitConversion {
     private  UnitMeasurement.UnitType unitType;
-    double feet,inch,yard, centimeter;
+    double feet,inch,yard, centimeter,litre;
 
 
 public double getUnitConversion(UnitMeasurement obj ,UnitMeasurement.UnitConv unitConv) {
@@ -20,20 +20,17 @@ public double getUnitConversion(UnitMeasurement obj ,UnitMeasurement.UnitConv un
         }
         return obj.value;
     }
-    else if (unitConv==unitConv.FeetToCentimeter){
-        if (obj.unitType== UnitMeasurement.UnitType.FEET){
-            centimeter=obj.value*60;
-        }
-     }
-    else if (unitConv==unitConv.YardToCentimeter){
-        if (obj.unitType == UnitMeasurement.UnitType.YARD){
-            centimeter=obj.value*180;
-        }
-     }
     else if (unitConv==unitConv.CentimeterToInch){
         if (obj.unitType== UnitMeasurement.UnitType.CENTIMETER){
             inch=obj.value/2.5;
             return inch;
+        }
+        return obj.value;
+     }
+    else if (unitConv==unitConv.GallonToLitre){
+        if(obj.unitType==UnitMeasurement.UnitType.Gallon){
+            litre =obj.value*3.785;
+            return litre;
         }
         return obj.value;
      }
