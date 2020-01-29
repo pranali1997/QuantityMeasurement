@@ -190,5 +190,15 @@ public class QuantityMeasurementTest {
     }
 
 
+    @Test
+    public void whenGivenOneTonneAndThousandKilograms_ShouldReturnTrue() throws quantityMeasureException {
+        UnitMeasurement first = new UnitMeasurement(UnitMeasurement.UnitType.Tonne,  1.0);
+        UnitConversion unit = new UnitConversion();
+        double v1 = unit.getUnitConversion(first,UnitMeasurement.UnitConv.TonneToKilogram);
+        UnitMeasurement second = new UnitMeasurement(UnitMeasurement.UnitType.KILOGRAM,1000.0);
+        double v2=unit.getUnitConversion(second,UnitMeasurement.UnitConv.TonneToKilogram);
+        Assert.assertTrue(v1==v2);
+    }
+
 
 }
