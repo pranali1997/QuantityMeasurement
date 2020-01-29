@@ -11,12 +11,12 @@ public class UnitMeasurement {
     public UnitConv unitConv;
 
     public enum UnitType {
-        FEET, INCH ,YARD , CENTIMETER,Litre,Gallon
+        FEET, INCH ,YARD , CENTIMETER, LITRE, GALLON,MILILITER
     }
 
     public enum UnitConv
     {
-        FeetToInch,  YardToInch, FeetToCentimeter,CentimeterToInch, YardToCentimeter,GallonToLitre
+        FeetToInch, YardToInch, CentimeterToInch, MililitreToLitre, GallonToLitre
     }
 
     public UnitMeasurement(UnitType unitType, Double value) throws quantityMeasureException {

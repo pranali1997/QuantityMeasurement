@@ -161,12 +161,23 @@ public class QuantityMeasurementTest {
     }
 
     @Test
-    public void whenGivenOneGallon_ShouldReturnInLitres() throws quantityMeasureException {
-        UnitMeasurement first = new UnitMeasurement(UnitMeasurement.UnitType.Gallon,  1.0);
+    public void whenGivenOneGallon_ShouldReturnInTrue() throws quantityMeasureException {
+        UnitMeasurement first = new UnitMeasurement(UnitMeasurement.UnitType.GALLON,  1.0);
         UnitConversion unit = new UnitConversion();
         double v1 = unit.getUnitConversion(first,UnitMeasurement.UnitConv.GallonToLitre);
-        UnitMeasurement second = new UnitMeasurement(UnitMeasurement.UnitType.Litre,3.785);
+        UnitMeasurement second = new UnitMeasurement(UnitMeasurement.UnitType.LITRE,3.785);
         double v2=unit.getUnitConversion(second,UnitMeasurement.UnitConv.GallonToLitre);
         Assert.assertTrue(v1==v2);
     }
+
+    @Test
+    public void whenGivenOneLitreAndThousandMililiter_ShouldReturnITrue() throws quantityMeasureException {
+        UnitMeasurement first = new UnitMeasurement(UnitMeasurement.UnitType.LITRE,  1.0);
+        UnitConversion unit = new UnitConversion();
+        double v1 = unit.getUnitConversion(first,UnitMeasurement.UnitConv.MililitreToLitre);
+        UnitMeasurement second = new UnitMeasurement(UnitMeasurement.UnitType.MILILITER,1000.0);
+        double v2=unit.getUnitConversion(second,UnitMeasurement.UnitConv.MililitreToLitre);
+        Assert.assertTrue(v1==v2);
+    }
+
 }

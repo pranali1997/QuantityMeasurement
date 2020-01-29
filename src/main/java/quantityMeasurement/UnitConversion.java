@@ -1,11 +1,11 @@
 package quantityMeasurement;
 
 public class UnitConversion {
-    private  UnitMeasurement.UnitType unitType;
+
     double feet,inch,yard, centimeter,litre;
+    private double mililitre;
 
-
-public double getUnitConversion(UnitMeasurement obj ,UnitMeasurement.UnitConv unitConv) {
+    public double getUnitConversion(UnitMeasurement obj ,UnitMeasurement.UnitConv unitConv) {
      if (unitConv == unitConv.FeetToInch) {
         if (obj.unitType == UnitMeasurement.UnitType.FEET) {
             inch = obj.value * 12;
@@ -28,12 +28,21 @@ public double getUnitConversion(UnitMeasurement obj ,UnitMeasurement.UnitConv un
         return obj.value;
      }
     else if (unitConv==unitConv.GallonToLitre){
-        if(obj.unitType==UnitMeasurement.UnitType.Gallon){
+        if(obj.unitType==UnitMeasurement.UnitType.GALLON){
             litre =obj.value*3.785;
             return litre;
         }
         return obj.value;
      }
+     else if (unitConv==unitConv.MililitreToLitre){
+         if(obj.unitType==UnitMeasurement.UnitType.LITRE){
+             mililitre =obj.value*1000.0;
+             return mililitre;
+         }
+         return obj.value;
+     }
+
+
     return 0;
 }
 

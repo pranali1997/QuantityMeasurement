@@ -2,35 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="74109101-9562-4432-b01f-3f0261b1b22f" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.gradle/4.10.3/fileContent/fileContent.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.3/fileContent/fileContent.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.10.3/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.3/fileHashes/fileHashes.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.10.3/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.3/fileHashes/fileHashes.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.10.3/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.3/fileHashes/resourceHashesCache.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.10.3/javaCompile/classAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.3/javaCompile/classAnalysis.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.10.3/javaCompile/jarAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.3/javaCompile/jarAnalysis.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.10.3/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.3/javaCompile/javaCompile.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.10.3/javaCompile/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.3/javaCompile/taskHistory.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.10.3/taskHistory/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.3/taskHistory/taskHistory.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.10.3/taskHistory/taskHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.3/taskHistory/taskHistory.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/quantityMeasurement/UnitMeasurement$UnitConv.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/quantityMeasurement/UnitMeasurement$UnitConv.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/test/QuantityMeasurementTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/test/QuantityMeasurementTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/test/UnitAdditionTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/test/UnitAdditionTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/classes/UnitAdditionTest.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/css/base-style.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/css/style.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/js/report.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/packages/default-package.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/test-results/test/TEST-UnitAdditionTest.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/test-results/test/binary/output.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/test/binary/output.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/test-results/test/binary/output.bin.idx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/test-results/test/binary/results.bin" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/quantityMeasurement/UnitConversion.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/quantityMeasurement/UnitConversion.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/quantityMeasurement/UnitMeasurement.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/quantityMeasurement/UnitMeasurement.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/QuantityMeasurementTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/QuantityMeasurementTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/UnitAdditionTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/UnitAdditionTest.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/.gradle/" />
@@ -63,11 +38,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/QuantityMeasurementTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="256">
-              <caret line="162" column="9" lean-forward="true" selection-start-line="162" selection-start-column="9" selection-end-line="162" selection-end-column="9" />
+            <state relative-caret-position="304">
+              <caret line="174" column="86" lean-forward="true" selection-start-line="174" selection-start-column="86" selection-end-line="174" selection-end-column="86" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -75,10 +50,10 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/UnitAdditionTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="408">
+            <state relative-caret-position="154">
               <caret line="24" column="9" lean-forward="true" selection-start-line="24" selection-start-column="9" selection-end-line="24" selection-end-column="9" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -90,8 +65,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/quantityMeasurement/UnitAddition.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="8" column="29" selection-start-line="8" selection-start-column="29" selection-end-line="8" selection-end-column="29" />
+            <state relative-caret-position="85">
+              <caret line="5" column="57" selection-start-line="5" selection-start-column="57" selection-end-line="5" selection-end-column="57" />
             </state>
           </provider>
         </entry>
@@ -108,8 +83,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/quantityMeasurement/UnitMeasurement.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="161">
-              <caret line="18" column="98" selection-start-line="18" selection-start-column="98" selection-end-line="18" selection-end-column="98" />
+            <state relative-caret-position="254">
+              <caret line="18" column="66" lean-forward="true" selection-start-line="18" selection-start-column="50" selection-end-line="18" selection-end-column="66" />
             </state>
           </provider>
         </entry>
@@ -117,8 +92,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/quantityMeasurement/UnitConversion.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="406">
-              <caret line="31" column="8" selection-start-line="22" selection-start-column="4" selection-end-line="31" selection-end-column="8" />
+            <state relative-caret-position="32">
+              <caret line="3" selection-start-line="3" selection-end-line="3" />
             </state>
           </provider>
         </entry>
@@ -246,7 +221,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Gradle.QuantityMeasurementTest">
+  <component name="RunManager" selected="Gradle.QuantityMeasurementTest.whenGivenOneLitreAndThousandMililiter_ShouldReturnITrue">
     <configuration name="QuantityMeasurementTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -287,12 +262,32 @@
       <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="QuantityMeasurementTest.whenGivenTwoInchAndFiveCentimeter_ShouldReturnTrue" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="QuantityMeasurementTest.whenGivenOneGallon_ShouldReturnInTrue" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;QuantityMeasurementTest.whenGivenTwoInchAndFiveCentimeter_ShouldReturnTrue&quot;" />
+        <option name="scriptParameters" value="--tests &quot;QuantityMeasurementTest.whenGivenOneGallon_ShouldReturnInTrue&quot;" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":cleanTest" />
+            <option value=":test" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="QuantityMeasurementTest.whenGivenOneLitreAndThousandMililiter_ShouldReturnITrue" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="--tests &quot;QuantityMeasurementTest.whenGivenOneLitreAndThousandMililiter_ShouldReturnITrue&quot;" />
         <option name="taskDescriptions">
           <list />
         </option>
@@ -327,33 +322,13 @@
       <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="UnitAdditionTest.whenGivenTwoInchTwoPointFiveCm_ShouldReturnAdditionInInch" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;UnitAdditionTest.whenGivenTwoInchTwoPointFiveCm_ShouldReturnAdditionInInch&quot;" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":cleanTest" />
-            <option value=":test" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
-      <method v="2" />
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.QuantityMeasurementTest.whenGivenOneLitreAndThousandMililiter_ShouldReturnITrue" />
+        <item itemvalue="Gradle.QuantityMeasurementTest.whenGivenOneGallon_ShouldReturnInTrue" />
+        <item itemvalue="Gradle.QuantityMeasurementTest.whenGivenOneGallon_ShouldReturnInLitres" />
         <item itemvalue="Gradle.QuantityMeasurementTest" />
         <item itemvalue="Gradle.UnitAdditionTest" />
-        <item itemvalue="Gradle.QuantityMeasurementTest.whenGivenOneGallon_ShouldReturnInLitres" />
-        <item itemvalue="Gradle.QuantityMeasurementTest.whenGivenTwoInchAndFiveCentimeter_ShouldReturnTrue" />
-        <item itemvalue="Gradle.UnitAdditionTest.whenGivenTwoInchTwoPointFiveCm_ShouldReturnAdditionInInch" />
       </list>
     </recent_temporary>
   </component>
@@ -371,18 +346,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="QuantityMeasurementTest - 2020.01.29 at 11h 44m 32s.xml">
-      <configuration name="QuantityMeasurementTest" configurationId="GradleRunConfiguration" />
-    </history-entry>
-    <history-entry file="QuantityMeasurementTest_whenGivenTwoInchAndFiveCentimeter_ShouldReturnTrue - 2020.01.29 at 11h 46m 25s.xml">
-      <configuration name="QuantityMeasurementTest.whenGivenTwoInchAndFiveCentimeter_ShouldReturnTrue" configurationId="GradleRunConfiguration" />
-    </history-entry>
-    <history-entry file="QuantityMeasurementTest_whenGivenTwoInchAndFiveCentimeter_ShouldReturnTrue - 2020.01.29 at 11h 46m 47s.xml">
-      <configuration name="QuantityMeasurementTest.whenGivenTwoInchAndFiveCentimeter_ShouldReturnTrue" configurationId="GradleRunConfiguration" />
-    </history-entry>
-    <history-entry file="QuantityMeasurementTest_whenGivenTwoInchAndFiveCentimeter_ShouldReturnTrue - 2020.01.29 at 11h 47m 05s.xml">
-      <configuration name="QuantityMeasurementTest.whenGivenTwoInchAndFiveCentimeter_ShouldReturnTrue" configurationId="GradleRunConfiguration" />
-    </history-entry>
     <history-entry file="UnitAdditionTest - 2020.01.29 at 11h 48m 00s.xml">
       <configuration name="UnitAdditionTest" configurationId="GradleRunConfiguration" />
     </history-entry>
@@ -401,12 +364,24 @@
     <history-entry file="QuantityMeasurementTest - 2020.01.29 at 15h 16m 13s.xml">
       <configuration name="QuantityMeasurementTest" configurationId="GradleRunConfiguration" />
     </history-entry>
+    <history-entry file="QuantityMeasurementTest_whenGivenOneGallon_ShouldReturnInLitres - 2020.01.29 at 15h 21m 10s.xml">
+      <configuration name="QuantityMeasurementTest.whenGivenOneGallon_ShouldReturnInLitres" configurationId="GradleRunConfiguration" />
+    </history-entry>
+    <history-entry file="QuantityMeasurementTest_whenGivenOneGallon_ShouldReturnInTrue - 2020.01.29 at 15h 24m 35s.xml">
+      <configuration name="QuantityMeasurementTest.whenGivenOneGallon_ShouldReturnInTrue" configurationId="GradleRunConfiguration" />
+    </history-entry>
+    <history-entry file="QuantityMeasurementTest_whenGivenOneLitreAndThousandMililiter_ShouldReturnITrue - 2020.01.29 at 15h 24m 41s.xml">
+      <configuration name="QuantityMeasurementTest.whenGivenOneLitreAndThousandMililiter_ShouldReturnITrue" configurationId="GradleRunConfiguration" />
+    </history-entry>
+    <history-entry file="QuantityMeasurementTest_whenGivenOneLitreAndThousandMililiter_ShouldReturnITrue - 2020.01.29 at 15h 29m 47s.xml">
+      <configuration name="QuantityMeasurementTest.whenGivenOneLitreAndThousandMililiter_ShouldReturnITrue" configurationId="GradleRunConfiguration" />
+    </history-entry>
   </component>
   <component name="ToolWindowManager">
     <frame x="67" y="25" width="1299" height="743" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26177174" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.26177174" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -533,20 +508,6 @@
     <entry file="file://$PROJECT_DIR$/src/test/java/UnitAddition/getAddition.java">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/quantityMeasurement/UnitMeasurement.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="161">
-          <caret line="18" column="98" selection-start-line="18" selection-start-column="98" selection-end-line="18" selection-end-column="98" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/quantityMeasurement/UnitAddition.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="29" selection-start-line="8" selection-start-column="29" selection-end-line="8" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/quantityMeasurement/quantityMeasureException.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="221">
@@ -554,27 +515,41 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/quantityMeasurement/UnitConversion.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/quantityMeasurement/UnitAddition.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="406">
-          <caret line="31" column="8" selection-start-line="22" selection-start-column="4" selection-end-line="31" selection-end-column="8" />
+        <state relative-caret-position="85">
+          <caret line="5" column="57" selection-start-line="5" selection-start-column="57" selection-end-line="5" selection-end-column="57" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/QuantityMeasurementTest.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/UnitAdditionTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="256">
-          <caret line="162" column="9" lean-forward="true" selection-start-line="162" selection-start-column="9" selection-end-line="162" selection-end-column="9" />
+        <state relative-caret-position="154">
+          <caret line="24" column="9" lean-forward="true" selection-start-line="24" selection-start-column="9" selection-end-line="24" selection-end-column="9" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/UnitAdditionTest.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/quantityMeasurement/UnitMeasurement.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="24" column="9" lean-forward="true" selection-start-line="24" selection-start-column="9" selection-end-line="24" selection-end-column="9" />
+        <state relative-caret-position="254">
+          <caret line="18" column="66" lean-forward="true" selection-start-line="18" selection-start-column="50" selection-end-line="18" selection-end-column="66" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/quantityMeasurement/UnitConversion.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="32">
+          <caret line="3" selection-start-line="3" selection-end-line="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/QuantityMeasurementTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="304">
+          <caret line="174" column="86" lean-forward="true" selection-start-line="174" selection-start-column="86" selection-end-line="174" selection-end-column="86" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
