@@ -16,7 +16,7 @@ public class UnitMeasurement {
 
     public enum UnitConv
     {
-        FeetToInch, YardToInch, CentimeterToInch, MililitreToLitre, GramToKilogram, TonneToKilogram, TonneAndGmToKilogram, GallonToLitre
+        LengthToInch, MililitreToLitre, TonneAndGmToKilogram, GallonToLitre
     }
 
     public UnitMeasurement(UnitType unitType, Double value) throws quantityMeasureException {
