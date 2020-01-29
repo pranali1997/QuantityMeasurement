@@ -23,7 +23,7 @@ public class UnitMeasurement {
         try {
             this.unitType = unitType;
             this.value = value;
-        } catch (NullPointerException e) {
+            } catch (NullPointerException e) {
             throw new quantityMeasureException(e.getMessage(), quantityMeasureException.ExceptionType.NULL_VALUE);
         }
     }
