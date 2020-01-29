@@ -50,7 +50,7 @@ public class UnitAdditionTest {
     public void whenGivenLitreAndMiliLitre_ShouldReturnAdditionInLitre() throws quantityMeasureException {
         UnitMeasurement first=new UnitMeasurement(UnitMeasurement.UnitType.LITRE,1.0);
         UnitMeasurement second=new UnitMeasurement(UnitMeasurement.UnitType.MILILITER,1000.0);
-        double add=new UnitAddition().getAddition(first,second, UnitMeasurement.UnitConv.MililitreToLitre);
+        double add=new UnitAddition().getAddition(first,second, UnitMeasurement.UnitConv.GallonToLitre);
         Assert.assertEquals(2.0,add,0.0);
     }
 

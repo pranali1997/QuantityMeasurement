@@ -146,7 +146,6 @@ public class QuantityMeasurementTest {
         double v1 = unit.getUnitConversion(first,UnitMeasurement.UnitConv.LengthToInch);
         UnitMeasurement second = new UnitMeasurement(UnitMeasurement.UnitType.CENTIMETER,5.0);
         double v2=unit.getUnitConversion(second,UnitMeasurement.UnitConv.LengthToInch);
-        System.out.println(v1+"  "+v2);
         Assert.assertTrue(v1==v2);
     }
 
@@ -164,9 +163,9 @@ public class QuantityMeasurementTest {
     public void whenGivenOneLitreAndThousandMililiter_ShouldReturnTrue() throws quantityMeasureException {
         UnitMeasurement first = new UnitMeasurement(UnitMeasurement.UnitType.LITRE,  1.0);
         UnitConversion unit = new UnitConversion();
-        double v1 = unit.getUnitConversion(first,UnitMeasurement.UnitConv.MililitreToLitre);
+        double v1 = unit.getUnitConversion(first,UnitMeasurement.UnitConv.GallonToLitre);
         UnitMeasurement second = new UnitMeasurement(UnitMeasurement.UnitType.MILILITER,1000.0);
-        double v2=unit.getUnitConversion(second,UnitMeasurement.UnitConv.MililitreToLitre);
+        double v2=unit.getUnitConversion(second,UnitMeasurement.UnitConv.GallonToLitre);
         Assert.assertTrue(v1==v2);
     }
 

@@ -27,14 +27,13 @@ public class UnitConversion {
             litre =obj.value*3.785;
             return litre;
         }
-     }
-     else if (unitConv==unitConv.MililitreToLitre){
-         if(obj.unitType==UnitMeasurement.UnitType.MILILITER){
-             litre =obj.value/1000.0;
-             return litre;
-         }
+            if(obj.unitType==UnitMeasurement.UnitType.MILILITER){
+                litre =obj.value/1000.0;
+                return litre;
+            }
 
-     }
+        }
+
      else if (unitConv==unitConv.TonneAndGmToKilogram){
          if (obj.unitType== UnitMeasurement.UnitType.Tonne ){
              kilogram=obj.value*1000.0;
