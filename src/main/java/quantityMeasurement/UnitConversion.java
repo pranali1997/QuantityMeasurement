@@ -55,6 +55,17 @@ public class UnitConversion {
          }
          return obj.value;
      }
+     else if (unitConv==unitConv.TonneAndGmToKilogram){
+         if (obj.unitType== UnitMeasurement.UnitType.Tonne){
+             kilogram=obj.value*1000.0;
+             return kilogram;
+         }
+         else
+             kilogram=obj.value/1000.0;
+             return kilogram;
+
+
+     }
 
 
     return 0;

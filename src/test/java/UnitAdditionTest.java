@@ -54,4 +54,13 @@ public class UnitAdditionTest {
         Assert.assertEquals(2.0,add,0.0);
     }
 
+    @Test
+    public void whenGivenTonneAndGram_ShouldReturnAdditionInKilogram() throws quantityMeasureException {
+        UnitMeasurement first=new UnitMeasurement(UnitMeasurement.UnitType.Tonne,1.0);
+        UnitMeasurement second=new UnitMeasurement(UnitMeasurement.UnitType.GRAM,1000.0);
+        double add=new UnitAddition().getAddition(first,second, UnitMeasurement.UnitConv.TonneAndGmToKilogram);
+        Assert.assertEquals(1001.0,add,0.0);
+    }
+
+
 }
