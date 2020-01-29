@@ -39,11 +39,19 @@ public class UnitAdditionTest {
     }
 
     @Test
-    public void whenGivenGallonAndLitre_ShouldReturnAdditionInInch() throws quantityMeasureException {
+    public void whenGivenGallonAndLitre_ShouldReturnAdditionInLitre() throws quantityMeasureException {
         UnitMeasurement first=new UnitMeasurement(UnitMeasurement.UnitType.GALLON,1.0);
         UnitMeasurement second=new UnitMeasurement(UnitMeasurement.UnitType.LITRE,3.78);
         double add=new UnitAddition().getAddition(first,second, UnitMeasurement.UnitConv.GallonToLitre);
         Assert.assertEquals(7.5649999999999995,add,0.0);
+    }
+
+    @Test
+    public void whenGivenLitreAndMiliLitre_ShouldReturnAdditionInLitre() throws quantityMeasureException {
+        UnitMeasurement first=new UnitMeasurement(UnitMeasurement.UnitType.LITRE,1.0);
+        UnitMeasurement second=new UnitMeasurement(UnitMeasurement.UnitType.MILILITER,1000.0);
+        double add=new UnitAddition().getAddition(first,second, UnitMeasurement.UnitConv.MililitreToLitre);
+        Assert.assertEquals(2.0,add,0.0);
     }
 
 }

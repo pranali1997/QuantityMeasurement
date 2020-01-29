@@ -35,13 +35,12 @@ public class UnitConversion {
         return obj.value;
      }
      else if (unitConv==unitConv.MililitreToLitre){
-         if(obj.unitType==UnitMeasurement.UnitType.LITRE){
-             mililitre =obj.value*1000.0;
-             return mililitre;
+         if(obj.unitType==UnitMeasurement.UnitType.MILILITER){
+             litre =obj.value/1000.0;
+             return litre;
          }
          return obj.value;
      }
-
 
     return 0;
 }
