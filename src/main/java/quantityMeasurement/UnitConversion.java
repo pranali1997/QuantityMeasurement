@@ -4,6 +4,7 @@ public class UnitConversion {
 
     double feet,inch,yard, centimeter,litre;
     private double kilogram;
+    private double celcius;
 
     public double getUnitConversion(UnitMeasurement obj ,UnitMeasurement.UnitConv unitConv) {
 
@@ -27,10 +28,10 @@ public class UnitConversion {
             litre =obj.value*3.785;
             return litre;
         }
-            if(obj.unitType==UnitMeasurement.UnitType.MILILITER){
-                litre =obj.value/1000.0;
-                return litre;
-            }
+        if(obj.unitType==UnitMeasurement.UnitType.MILILITER){
+            litre =obj.value/1000.0;
+            return litre;
+        }
 
         }
 
@@ -44,6 +45,13 @@ public class UnitConversion {
              return kilogram;
          }
      }
+
+     else if (unitConv==unitConv.FahrenheitToCelcius){
+         if (obj.unitType== UnitMeasurement.UnitType.FAHRENHEIT){
+             celcius=(obj.value-32)/1.8;
+             return celcius;
+         }
+        }
      return obj.value;
 }
 

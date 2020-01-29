@@ -190,5 +190,15 @@ public class QuantityMeasurementTest {
         Assert.assertTrue(v1==v2);
     }
 
+    @Test
+    public void whenGivenFahrenheitAndCelcius_ShouldReturnTrue() throws quantityMeasureException {
+        UnitMeasurement first = new UnitMeasurement(UnitMeasurement.UnitType.FAHRENHEIT, 212.0);
+        UnitConversion unit = new UnitConversion();
+        double v1 = unit.getUnitConversion(first,UnitMeasurement.UnitConv.FahrenheitToCelcius);
+        UnitMeasurement second = new UnitMeasurement(UnitMeasurement.UnitType.CELCIUS,100.0);
+        double v2=unit.getUnitConversion(second,UnitMeasurement.UnitConv.FahrenheitToCelcius);
+        Assert.assertTrue(v1==v2);
+    }
+
 
 }
