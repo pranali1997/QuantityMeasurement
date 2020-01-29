@@ -30,10 +30,10 @@ public double getUnitConversion(UnitMeasurement obj ,UnitMeasurement.UnitConv un
             centimeter=obj.value*180;
         }
      }
-    else if (unitConv==unitConv.InchToCentiemter){
-        if (obj.unitType== UnitMeasurement.UnitType.INCH){
-            centimeter=obj.value*2.5;
-            return centimeter;
+    else if (unitConv==unitConv.CentimeterToInch){
+        if (obj.unitType== UnitMeasurement.UnitType.CENTIMETER){
+            inch=obj.value/2.5;
+            return inch;
         }
         return obj.value;
      }
