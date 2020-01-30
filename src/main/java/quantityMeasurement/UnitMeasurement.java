@@ -8,15 +8,9 @@ public class UnitMeasurement {
     public Double value;
 
     double feet,inch;
-    public UnitConv unitConv;
 
     public enum UnitType {
         FEET, INCH ,YARD , CENTIMETER, LITRE, GALLON,MILILITER,KILOGRAM, Tonne, GRAM, FAHRENHEIT, CELCIUS;
-    }
-
-    public enum UnitConv
-    {
-        LengthToInch, TonneAndGmToKilogram, FahrenheitToCelcius, GallonToLitre
     }
 
     public UnitMeasurement(UnitType unitType, Double value) throws quantityMeasureException {
@@ -36,8 +30,8 @@ public class UnitMeasurement {
         return Double.compare(that.feet, feet) == 0 &&
                 Double.compare(that.inch, inch) == 0 &&
                 unitType == that.unitType &&
-                Objects.equals(value, that.value) &&
-                unitConv == that.unitConv;
+                Objects.equals(value, that.value);
     }
+
 
 }

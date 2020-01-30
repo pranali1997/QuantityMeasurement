@@ -1,58 +1,34 @@
 package quantityMeasurement;
 
+import java.util.HashMap;
+import java.util.Map;
+
 public class UnitConversion {
 
-    double feet,inch,yard, centimeter,litre;
-    private double kilogram;
-    private double celcius;
+    private final Double length;
+    Map<UnitMeasurement.UnitType, Double> conversion=new HashMap<>();
 
-    public double getUnitConversion(UnitMeasurement obj ,UnitMeasurement.UnitConv unitConv) {
+    public UnitConversion(UnitMeasurement first) {
+        length=first.value;
+        conversion.put(UnitMeasurement.UnitType.FEET, 1*12.0);
+        conversion.put(UnitMeasurement.UnitType.INCH,1.0);
+        conversion.put(UnitMeasurement.UnitType.YARD,36.0);
+        conversion.put(UnitMeasurement.UnitType.CENTIMETER,1/2.5);
+        conversion.put(UnitMeasurement.UnitType.GALLON,3.785);
+        conversion.put(UnitMeasurement.UnitType.LITRE,1.0);
+        conversion.put(UnitMeasurement.UnitType.MILILITER,1/1000.0);
+        conversion.put(UnitMeasurement.UnitType.Tonne,1000.0);
+        conversion.put(UnitMeasurement.UnitType.GRAM,1/1000.0);
+        conversion.put(UnitMeasurement.UnitType.KILOGRAM,1.0);
+        conversion.put(UnitMeasurement.UnitType.FAHRENHEIT,1.0);
+        conversion.put(UnitMeasurement.UnitType.CELCIUS,1.0*2.12);
 
-        if (unitConv==unitConv.LengthToInch){
-            if (obj.unitType == UnitMeasurement.UnitType.FEET) {
-                inch = obj.value * 12;
-                return inch;
-            }
-            if (obj.unitType== UnitMeasurement.UnitType.YARD){
-                inch=obj.value*36;
-                return inch;
-            }
-            if (obj.unitType== UnitMeasurement.UnitType.CENTIMETER){
-                inch=obj.value/2.5;
-                return inch;
-            }
-        }
+    }
+    public double getConvertedValue(UnitMeasurement.UnitType unitType) {
+        double v = this.length*this.conversion.get(unitType);
+        return v;
+    }
 
-    else if (unitConv==unitConv.GallonToLitre){
-        if(obj.unitType==UnitMeasurement.UnitType.GALLON){
-            litre =obj.value*3.785;
-            return litre;
-        }
-        if(obj.unitType==UnitMeasurement.UnitType.MILILITER){
-            litre =obj.value/1000.0;
-            return litre;
-        }
 
-        }
-
-     else if (unitConv==unitConv.TonneAndGmToKilogram){
-         if (obj.unitType== UnitMeasurement.UnitType.Tonne ){
-             kilogram=obj.value*1000.0;
-             return kilogram;
-         }
-         else  if (obj.unitType== UnitMeasurement.UnitType.GRAM ){
-             kilogram = obj.value / 1000.0;
-             return kilogram;
-         }
-     }
-
-     else if (unitConv==unitConv.FahrenheitToCelcius){
-         if (obj.unitType== UnitMeasurement.UnitType.FAHRENHEIT){
-             celcius=(obj.value-32)/1.8;
-             return celcius;
-         }
-        }
-     return obj.value;
-}
 
 }

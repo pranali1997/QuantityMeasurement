@@ -10,7 +10,7 @@ public class UnitAdditionTest {
     public void whenGivenTwoInchValues_ShouldReturnAdditionInInch() throws quantityMeasureException {
         UnitMeasurement first=new UnitMeasurement(UnitMeasurement.UnitType.INCH,2.0);
         UnitMeasurement second=new UnitMeasurement(UnitMeasurement.UnitType.INCH,2.0);
-        double add=new UnitAddition().getAddition(first,second, UnitMeasurement.UnitConv.LengthToInch);
+        double add=new UnitAddition().getAddition(first,second);
         Assert.assertEquals(4.0,add,0.0);
     }
 
@@ -18,7 +18,7 @@ public class UnitAdditionTest {
     public void whenGivenOneFeetTwoInchValues_ShouldReturnAdditionInInch() throws quantityMeasureException {
         UnitMeasurement first=new UnitMeasurement(UnitMeasurement.UnitType.FEET,1.0);
         UnitMeasurement second=new UnitMeasurement(UnitMeasurement.UnitType.INCH,2.0);
-        double add=new UnitAddition().getAddition(first,second, UnitMeasurement.UnitConv.LengthToInch);
+        double add=new UnitAddition().getAddition(first,second);
         Assert.assertEquals(14.0,add,0.0);
     }
 
@@ -26,7 +26,7 @@ public class UnitAdditionTest {
     public void whenGivenOneFeetOneFeetValues_ShouldReturnAdditionInInch() throws quantityMeasureException {
         UnitMeasurement first=new UnitMeasurement(UnitMeasurement.UnitType.FEET,1.0);
         UnitMeasurement second=new UnitMeasurement(UnitMeasurement.UnitType.FEET,1.0);
-        double add=new UnitAddition().getAddition(first,second, UnitMeasurement.UnitConv.LengthToInch);
+        double add=new UnitAddition().getAddition(first,second);
         Assert.assertEquals(24.0,add,0.0);
     }
 
@@ -34,7 +34,7 @@ public class UnitAdditionTest {
     public void whenGivenTwoInchTwoPointFiveCm_ShouldReturnAdditionInInch() throws quantityMeasureException {
         UnitMeasurement first=new UnitMeasurement(UnitMeasurement.UnitType.INCH,2.0);
         UnitMeasurement second=new UnitMeasurement(UnitMeasurement.UnitType.CENTIMETER,2.5);
-        double add=new UnitAddition().getAddition(first,second, UnitMeasurement.UnitConv.LengthToInch);
+        double add=new UnitAddition().getAddition(first,second);
         Assert.assertEquals(3.0,add,0.0);
     }
 
@@ -42,7 +42,7 @@ public class UnitAdditionTest {
     public void whenGivenGallonAndLitre_ShouldReturnAdditionInLitre() throws quantityMeasureException {
         UnitMeasurement first=new UnitMeasurement(UnitMeasurement.UnitType.GALLON,1.0);
         UnitMeasurement second=new UnitMeasurement(UnitMeasurement.UnitType.LITRE,3.78);
-        double add=new UnitAddition().getAddition(first,second, UnitMeasurement.UnitConv.GallonToLitre);
+        double add=new UnitAddition().getAddition(first,second);
         Assert.assertEquals(7.5649999999999995,add,0.0);
     }
 
@@ -50,7 +50,7 @@ public class UnitAdditionTest {
     public void whenGivenLitreAndMiliLitre_ShouldReturnAdditionInLitre() throws quantityMeasureException {
         UnitMeasurement first=new UnitMeasurement(UnitMeasurement.UnitType.LITRE,1.0);
         UnitMeasurement second=new UnitMeasurement(UnitMeasurement.UnitType.MILILITER,1000.0);
-        double add=new UnitAddition().getAddition(first,second, UnitMeasurement.UnitConv.GallonToLitre);
+        double add=new UnitAddition().getAddition(first,second);
         Assert.assertEquals(2.0,add,0.0);
     }
 
@@ -58,7 +58,7 @@ public class UnitAdditionTest {
     public void whenGivenTonneAndGram_ShouldReturnAdditionInKilogram() throws quantityMeasureException {
         UnitMeasurement first=new UnitMeasurement(UnitMeasurement.UnitType.Tonne,1.0);
         UnitMeasurement second=new UnitMeasurement(UnitMeasurement.UnitType.GRAM,1000.0);
-        double add=new UnitAddition().getAddition(first,second, UnitMeasurement.UnitConv.TonneAndGmToKilogram);
+        double add=new UnitAddition().getAddition(first,second);
         Assert.assertEquals(1001.0,add,0.0);
     }
 

@@ -28,11 +28,9 @@ public class QuantityMeasurementTest {
 
     @Test
     public void whenGivenFeetValue_ShouldReturnFalse() throws quantityMeasureException {
-
         UnitMeasurement first = new UnitMeasurement(UnitMeasurement.UnitType.FEET,1.0);
         UnitMeasurement second = new UnitMeasurement(UnitMeasurement.UnitType.FEET,1.0);
         Assert.assertEquals(first, second);
-
     }
 
 //Inch Test case
@@ -70,30 +68,33 @@ public class QuantityMeasurementTest {
     @Test
     public void whenGivenZeroFeetAndZeroInch_ShouldReturnZeroInch() throws quantityMeasureException {
         UnitMeasurement first = new UnitMeasurement(UnitMeasurement.UnitType.FEET,0.0);
-        UnitConversion unit = new UnitConversion();
-        double v1 = unit.getUnitConversion(first,UnitMeasurement.UnitConv.LengthToInch);
+        UnitConversion unit = new UnitConversion(first);
+        double v1 = unit.getConvertedValue(first.unitType);
         UnitMeasurement second = new UnitMeasurement(UnitMeasurement.UnitType.INCH,0.0);
-       double v2=unit.getUnitConversion(second,UnitMeasurement.UnitConv.LengthToInch);
+        UnitConversion unit1 = new UnitConversion(second);
+        double v2=unit1.getConvertedValue(second.unitType);
         Assert.assertTrue(v1==v2);
     }
 
     @Test
     public void whenGivenOneFeetAndOneInch_ShouldReturnFalseInch() throws quantityMeasureException {
         UnitMeasurement first = new UnitMeasurement(UnitMeasurement.UnitType.FEET,1.0);
-        UnitConversion unit = new UnitConversion();
-        double v1 = unit.getUnitConversion(first,UnitMeasurement.UnitConv.LengthToInch);
+        UnitConversion unit = new UnitConversion(first);
+        double v1 = unit.getConvertedValue(first.unitType);
         UnitMeasurement second = new UnitMeasurement(UnitMeasurement.UnitType.INCH,1.0);
-        double v2=unit.getUnitConversion(second,UnitMeasurement.UnitConv.LengthToInch);
+        UnitConversion unit1 = new UnitConversion(second);
+        double v2=unit1.getConvertedValue(second.unitType);
        Assert.assertTrue(v1!=v2);
     }
 
     @Test
     public void whenGivenOnefeetAndTwelveInch_ShouldReturnTrue() throws quantityMeasureException {
         UnitMeasurement first = new UnitMeasurement(UnitMeasurement.UnitType.FEET,1.0);
-        UnitConversion unit = new UnitConversion();
-        double v1 = unit.getUnitConversion(first,UnitMeasurement.UnitConv.LengthToInch);
+        UnitConversion unit = new UnitConversion(first);
+        double v1 = unit.getConvertedValue(first.unitType);
         UnitMeasurement second = new UnitMeasurement(UnitMeasurement.UnitType.INCH,12.0);
-        double v2=unit.getUnitConversion(second,UnitMeasurement.UnitConv.LengthToInch);
+        UnitConversion unit1 = new UnitConversion(second);
+        double v2=unit1.getConvertedValue(second.unitType);
         Assert.assertTrue(v1==v2);
     }
 
@@ -102,80 +103,88 @@ public class QuantityMeasurementTest {
     @Test
     public void whenGivenThreefeetAndOneYard_ShouldReturnTrue() throws quantityMeasureException {
         UnitMeasurement first = new UnitMeasurement(UnitMeasurement.UnitType.FEET,3.0);
-        UnitConversion unit = new UnitConversion();
-        double v1 = unit.getUnitConversion(first,UnitMeasurement.UnitConv.LengthToInch);
+        UnitConversion unit = new UnitConversion(first);
+        double v1 = unit.getConvertedValue(first.unitType);
         UnitMeasurement second = new UnitMeasurement(UnitMeasurement.UnitType.YARD,1.0);
-        double v2=unit.getUnitConversion(second,UnitMeasurement.UnitConv.LengthToInch);
+        UnitConversion unit1 = new UnitConversion(second);
+        double v2=unit1.getConvertedValue(second.unitType);
         Assert.assertTrue(v1==v2);
     }
 
     @Test
     public void whenGivenOnefeetAndOneYard_ShouldReturnFalse() throws quantityMeasureException {
         UnitMeasurement first = new UnitMeasurement(UnitMeasurement.UnitType.FEET,1.0);
-        UnitConversion unit = new UnitConversion();
-        double v1 = unit.getUnitConversion(first,UnitMeasurement.UnitConv.LengthToInch);
+        UnitConversion unit = new UnitConversion(first);
+        double v1 = unit.getConvertedValue(first.unitType);
         UnitMeasurement second = new UnitMeasurement(UnitMeasurement.UnitType.YARD,1.0);
-        double v2=unit.getUnitConversion(second,UnitMeasurement.UnitConv.LengthToInch);
+        UnitConversion unit1 = new UnitConversion(second);
+        double v2=unit1.getConvertedValue(second.unitType);
         Assert.assertTrue(v1!=v2);
     }
 
     @Test
     public void whenGivenOneInchAndOneYard_ShouldReturnFalse() throws quantityMeasureException {
         UnitMeasurement first = new UnitMeasurement(UnitMeasurement.UnitType.INCH,1.0);
-        UnitConversion unit = new UnitConversion();
-        double v1 = unit.getUnitConversion(first,UnitMeasurement.UnitConv.LengthToInch);
+        UnitConversion unit = new UnitConversion(first);
+        double v1 = unit.getConvertedValue(first.unitType);
         UnitMeasurement second = new UnitMeasurement(UnitMeasurement.UnitType.YARD,1.0);
-        double v2=unit.getUnitConversion(second,UnitMeasurement.UnitConv.LengthToInch);
+        UnitConversion unit1 = new UnitConversion(second);
+        double v2=unit1.getConvertedValue(second.unitType);
         Assert.assertTrue(v1!=v2);
     }
 
     @Test
     public void whenGivenThirtySixInchAndOneYard_ShouldReturnTrue() throws quantityMeasureException {
         UnitMeasurement first = new UnitMeasurement(UnitMeasurement.UnitType.INCH,36.0);
-        UnitConversion unit = new UnitConversion();
-        double v1 = unit.getUnitConversion(first,UnitMeasurement.UnitConv.LengthToInch);
+        UnitConversion unit = new UnitConversion(first);
+        double v1 = unit.getConvertedValue(first.unitType);
         UnitMeasurement second = new UnitMeasurement(UnitMeasurement.UnitType.YARD,1.0);
-        double v2=unit.getUnitConversion(second,UnitMeasurement.UnitConv.LengthToInch);
+        UnitConversion unit1 = new UnitConversion(second);
+        double v2=unit1.getConvertedValue(second.unitType);
         Assert.assertTrue(v1==v2);
     }
 
     @Test
     public void whenGivenTwoInchAndFiveCentimeter_ShouldReturnTrue() throws quantityMeasureException {
         UnitMeasurement first = new UnitMeasurement(UnitMeasurement.UnitType.INCH,2.0);
-        UnitConversion unit = new UnitConversion();
-        double v1 = unit.getUnitConversion(first,UnitMeasurement.UnitConv.LengthToInch);
+        UnitConversion unit = new UnitConversion(first);
+        double v1 = unit.getConvertedValue(first.unitType);
         UnitMeasurement second = new UnitMeasurement(UnitMeasurement.UnitType.CENTIMETER,5.0);
-        double v2=unit.getUnitConversion(second,UnitMeasurement.UnitConv.LengthToInch);
+        UnitConversion unit1 = new UnitConversion(second);
+        double v2=unit1.getConvertedValue(second.unitType);
         Assert.assertTrue(v1==v2);
     }
 
     @Test
     public void whenGivenOneGallon_ShouldReturnInTrue() throws quantityMeasureException {
         UnitMeasurement first = new UnitMeasurement(UnitMeasurement.UnitType.GALLON,  1.0);
-        UnitConversion unit = new UnitConversion();
-        double v1 = unit.getUnitConversion(first,UnitMeasurement.UnitConv.GallonToLitre);
+        UnitConversion unit = new UnitConversion(first);
+        double v1 = unit.getConvertedValue(first.unitType);
         UnitMeasurement second = new UnitMeasurement(UnitMeasurement.UnitType.LITRE,3.785);
-        double v2=unit.getUnitConversion(second,UnitMeasurement.UnitConv.GallonToLitre);
+        UnitConversion unit1 = new UnitConversion(second);
+        double v2=unit1.getConvertedValue(second.unitType);
         Assert.assertTrue(v1==v2);
     }
 
     @Test
     public void whenGivenOneLitreAndThousandMililiter_ShouldReturnTrue() throws quantityMeasureException {
         UnitMeasurement first = new UnitMeasurement(UnitMeasurement.UnitType.LITRE,  1.0);
-        UnitConversion unit = new UnitConversion();
-        double v1 = unit.getUnitConversion(first,UnitMeasurement.UnitConv.GallonToLitre);
+        UnitConversion unit = new UnitConversion(first);
+        double v1 = unit.getConvertedValue(first.unitType);
         UnitMeasurement second = new UnitMeasurement(UnitMeasurement.UnitType.MILILITER,1000.0);
-        double v2=unit.getUnitConversion(second,UnitMeasurement.UnitConv.GallonToLitre);
+        UnitConversion unit1 = new UnitConversion(second);
+        double v2=unit1.getConvertedValue(second.unitType);
         Assert.assertTrue(v1==v2);
     }
 
     @Test
     public void whenGivenOnekgAndThousandGrams_ShouldReturnTrue() throws quantityMeasureException {
         UnitMeasurement first = new UnitMeasurement(UnitMeasurement.UnitType.KILOGRAM,  1.0);
-        UnitConversion unit = new UnitConversion();
-        double v1 = unit.getUnitConversion(first,UnitMeasurement.UnitConv.TonneAndGmToKilogram);
+        UnitConversion unit = new UnitConversion(first);
+        double v1 = unit.getConvertedValue(first.unitType);
         UnitMeasurement second = new UnitMeasurement(UnitMeasurement.UnitType.GRAM,1000.0);
-        double v2=unit.getUnitConversion(second,UnitMeasurement.UnitConv.TonneAndGmToKilogram);
+        UnitConversion unit1 = new UnitConversion(second);
+        double v2=unit1.getConvertedValue(second.unitType);
         Assert.assertTrue(v1==v2);
     }
 
@@ -183,21 +192,23 @@ public class QuantityMeasurementTest {
     @Test
     public void whenGivenOneTonneAndThousandKilograms_ShouldReturnTrue() throws quantityMeasureException {
         UnitMeasurement first = new UnitMeasurement(UnitMeasurement.UnitType.Tonne,  1.0);
-        UnitConversion unit = new UnitConversion();
-        double v1 = unit.getUnitConversion(first,UnitMeasurement.UnitConv.TonneAndGmToKilogram);
+        UnitConversion unit = new UnitConversion(first);
+        double v1 = unit.getConvertedValue(first.unitType);
         UnitMeasurement second = new UnitMeasurement(UnitMeasurement.UnitType.KILOGRAM,1000.0);
-        double v2=unit.getUnitConversion(second,UnitMeasurement.UnitConv.TonneAndGmToKilogram);
+        UnitConversion unit1 = new UnitConversion(second);
+        double v2=unit1.getConvertedValue(second.unitType);
         Assert.assertTrue(v1==v2);
     }
 
     @Test
     public void whenGivenFahrenheitAndCelcius_ShouldReturnTrue() throws quantityMeasureException {
         UnitMeasurement first = new UnitMeasurement(UnitMeasurement.UnitType.FAHRENHEIT, 212.0);
-        UnitConversion unit = new UnitConversion();
-        double v1 = unit.getUnitConversion(first,UnitMeasurement.UnitConv.FahrenheitToCelcius);
+        UnitConversion unit = new UnitConversion(first);
+        double v1 = unit.getConvertedValue(first.unitType);
         UnitMeasurement second = new UnitMeasurement(UnitMeasurement.UnitType.CELCIUS,100.0);
-        double v2=unit.getUnitConversion(second,UnitMeasurement.UnitConv.FahrenheitToCelcius);
-        Assert.assertTrue(v1==v2);
+        UnitConversion unit1 = new UnitConversion(second);
+        double v2=unit1.getConvertedValue(second.unitType);
+        Assert.assertEquals(v1,v2,0);
     }
 
 
