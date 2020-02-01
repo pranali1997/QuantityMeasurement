@@ -1,12 +1,14 @@
 package quantityMeasurement;
 
+import sun.tools.jconsole.Plotter;
+
 import java.util.HashMap;
 import java.util.Map;
 
 public class UnitConversion {
 
     private final Double length;
-    Map<UnitMeasurement.UnitType, Double> conversion=new HashMap<>();
+    Map<UnitMeasurement.UnitType, Double > conversion=new HashMap<>();
 
     public UnitConversion(UnitMeasurement first) {
         length=first.value;
@@ -25,6 +27,7 @@ public class UnitConversion {
 
     }
     public double getConvertedValue(UnitMeasurement.UnitType unitType) {
+
         double v = this.length*this.conversion.get(unitType);
         return v;
     }
