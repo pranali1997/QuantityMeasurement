@@ -10,6 +10,7 @@ public class QuantityMeasurementTest {
     public void whenGivenZeroFeet_ShouldReturnTrue() throws quantityMeasureException {
         UnitMeasurement first = new UnitMeasurement("LENGTH",UnitMeasurement.UnitType.FEET,0.0);
         UnitMeasurement second = new UnitMeasurement("LENGTH",UnitMeasurement.UnitType.FEET,0.0);
+        Assert.assertTrue(first.equals(second));
         Assert.assertEquals(first,second);
     }
 
@@ -17,6 +18,7 @@ public class QuantityMeasurementTest {
     public void whenGivenNull_ShouldReturnFalse() throws quantityMeasureException {
             UnitMeasurement first = new UnitMeasurement("LENGTH",UnitMeasurement.UnitType.FEET,0.0);
             UnitMeasurement second = new UnitMeasurement("LENGTH",UnitMeasurement.UnitType.FEET,null);
+            Assert.assertTrue(first.equals(second));
             Assert.assertFalse(first==second);
     }
 
@@ -30,6 +32,7 @@ public class QuantityMeasurementTest {
     public void whenGivenFeetValue_ShouldReturnFalse() throws quantityMeasureException {
         UnitMeasurement first = new UnitMeasurement("LENGTH",UnitMeasurement.UnitType.FEET,1.0);
         UnitMeasurement second = new UnitMeasurement("LENGTH",UnitMeasurement.UnitType.FEET,1.0);
+        Assert.assertTrue(first.equals(second));
         Assert.assertEquals(first, second);
     }
 
@@ -46,6 +49,7 @@ public class QuantityMeasurementTest {
     public void whenGivenNullInInch_ShouldReturnFalse() throws quantityMeasureException {
             UnitMeasurement first = new UnitMeasurement("LENGTH",UnitMeasurement.UnitType.INCH,0.0);
             UnitMeasurement second = new UnitMeasurement("LENGTH",UnitMeasurement.UnitType.INCH,null);
+            Assert.assertTrue(first.equals(second));
             Assert.assertFalse(first==second);
 
     }
@@ -60,6 +64,7 @@ public class QuantityMeasurementTest {
     public void whenGivenInchValue_ShouldReturnFalse() throws quantityMeasureException {
         UnitMeasurement first = new UnitMeasurement("LENGTH",UnitMeasurement.UnitType.INCH,1.0);
         UnitMeasurement second = new UnitMeasurement("LENGTH",UnitMeasurement.UnitType.INCH,1.0);
+        Assert.assertTrue(first.equals(second));
         Assert.assertEquals(first, second);
     }
 
@@ -70,7 +75,7 @@ public class QuantityMeasurementTest {
     public void whenGiven0FeetAnd0Inch_IfComaparisonEqual_shouldReturnTrue() throws quantityMeasureException {
         UnitMeasurement first = new UnitMeasurement("LENGTH",UnitMeasurement.UnitType.FEET,0.0);
         UnitMeasurement second = new UnitMeasurement("LENGTH",UnitMeasurement.UnitType.INCH,0.0);
-        boolean equals = first.compare(second);
+        Assert.assertTrue(first.equals(second));
     }
 
     @Test
@@ -81,6 +86,7 @@ public class QuantityMeasurementTest {
         UnitMeasurement second = new UnitMeasurement("LENGTH",UnitMeasurement.UnitType.INCH,0.0);
         UnitConversion unit1 = new UnitConversion(second);
         double v2=unit1.getConvertedValue(second.unitType);
+        Assert.assertTrue(first.equals(second));
         Assert.assertTrue(v1==v2);
     }
 
@@ -92,7 +98,8 @@ public class QuantityMeasurementTest {
         UnitMeasurement second = new UnitMeasurement("LENGTH",UnitMeasurement.UnitType.INCH,1.0);
         UnitConversion unit1 = new UnitConversion(second);
         double v2=unit1.getConvertedValue(second.unitType);
-       Assert.assertTrue(v1!=v2);
+        Assert.assertTrue(first.equals(second));
+        Assert.assertTrue(v1!=v2);
     }
 
     @Test
@@ -103,6 +110,7 @@ public class QuantityMeasurementTest {
         UnitMeasurement second = new UnitMeasurement("LENGTH",UnitMeasurement.UnitType.INCH,12.0);
         UnitConversion unit1 = new UnitConversion(second);
         double v2=unit1.getConvertedValue(second.unitType);
+        Assert.assertTrue(first.equals(second));
         Assert.assertTrue(v1==v2);
     }
 
@@ -116,6 +124,7 @@ public class QuantityMeasurementTest {
         UnitMeasurement second = new UnitMeasurement("LENGTH",UnitMeasurement.UnitType.YARD,1.0);
         UnitConversion unit1 = new UnitConversion(second);
         double v2=unit1.getConvertedValue(second.unitType);
+        Assert.assertTrue(first.equals(second));
         Assert.assertTrue(v1==v2);
     }
 
@@ -127,6 +136,7 @@ public class QuantityMeasurementTest {
         UnitMeasurement second = new UnitMeasurement("LENGTH",UnitMeasurement.UnitType.YARD,1.0);
         UnitConversion unit1 = new UnitConversion(second);
         double v2=unit1.getConvertedValue(second.unitType);
+        Assert.assertTrue(first.equals(second));
         Assert.assertTrue(v1!=v2);
     }
 
@@ -138,6 +148,7 @@ public class QuantityMeasurementTest {
         UnitMeasurement second = new UnitMeasurement("LENGTH",UnitMeasurement.UnitType.YARD,1.0);
         UnitConversion unit1 = new UnitConversion(second);
         double v2=unit1.getConvertedValue(second.unitType);
+        Assert.assertTrue(first.equals(second));
         Assert.assertTrue(v1!=v2);
     }
 
@@ -149,6 +160,7 @@ public class QuantityMeasurementTest {
         UnitMeasurement second = new UnitMeasurement("LENGTH",UnitMeasurement.UnitType.YARD,1.0);
         UnitConversion unit1 = new UnitConversion(second);
         double v2=unit1.getConvertedValue(second.unitType);
+        Assert.assertTrue(first.equals(second));
         Assert.assertTrue(v1==v2);
     }
 
@@ -160,6 +172,7 @@ public class QuantityMeasurementTest {
         UnitMeasurement second = new UnitMeasurement("LENGTH",UnitMeasurement.UnitType.CENTIMETER,5.0);
         UnitConversion unit1 = new UnitConversion(second);
         double v2=unit1.getConvertedValue(second.unitType);
+        Assert.assertTrue(first.equals(second));
         Assert.assertTrue(v1==v2);
     }
 
@@ -171,6 +184,7 @@ public class QuantityMeasurementTest {
         UnitMeasurement second = new UnitMeasurement("VOLUMN",UnitMeasurement.UnitType.LITRE,3.785);
         UnitConversion unit1 = new UnitConversion(second);
         double v2=unit1.getConvertedValue(second.unitType);
+        Assert.assertTrue(first.equals(second));
         Assert.assertTrue(v1==v2);
     }
 
@@ -182,6 +196,7 @@ public class QuantityMeasurementTest {
         UnitMeasurement second = new UnitMeasurement("VOLUMN",UnitMeasurement.UnitType.MILILITER,1000.0);
         UnitConversion unit1 = new UnitConversion(second);
         double v2=unit1.getConvertedValue(second.unitType);
+        Assert.assertTrue(first.equals(second));
         Assert.assertTrue(v1==v2);
     }
 
@@ -193,6 +208,7 @@ public class QuantityMeasurementTest {
         UnitMeasurement second = new UnitMeasurement("MASS",UnitMeasurement.UnitType.GRAM,1000.0);
         UnitConversion unit1 = new UnitConversion(second);
         double v2=unit1.getConvertedValue(second.unitType);
+        Assert.assertTrue(first.equals(second));
         Assert.assertTrue(v1==v2);
     }
 
@@ -205,6 +221,7 @@ public class QuantityMeasurementTest {
         UnitMeasurement second = new UnitMeasurement("MASS",UnitMeasurement.UnitType.KILOGRAM,1000.0);
         UnitConversion unit1 = new UnitConversion(second);
         double v2=unit1.getConvertedValue(second.unitType);
+        Assert.assertTrue(first.equals(second));
         Assert.assertTrue(v1==v2);
     }
 
@@ -217,6 +234,19 @@ public class QuantityMeasurementTest {
         UnitMeasurement second = new UnitMeasurement("TEMP",UnitMeasurement.UnitType.CELCIUS,100.0);
         UnitConversion unit1 = new UnitConversion(second);
         double v2=unit1.getConvertedValue(second.unitType);
+        Assert.assertTrue(first.equals(second));
+        Assert.assertEquals(v1,v2,0);
+    }
+
+    @Test
+    public void whenGivenFahrenheitAndCelcius_ShouldReturnFalse() throws quantityMeasureException {
+        UnitMeasurement first = new UnitMeasurement("TEMP",UnitMeasurement.UnitType.FAHRENHEIT, 212.0);
+        UnitConversion unit = new UnitConversion(first);
+        double v1 = unit.getConvertedValue(first.unitType);
+        UnitMeasurement second = new UnitMeasurement("TEMP",UnitMeasurement.UnitType.CELCIUS,100.0);
+        UnitConversion unit1 = new UnitConversion(second);
+        double v2=unit1.getConvertedValue(second.unitType);
+        Assert.assertTrue(first.equals(second));
         Assert.assertEquals(v1,v2,0);
     }
 
@@ -228,6 +258,7 @@ public class QuantityMeasurementTest {
         UnitMeasurement second = new UnitMeasurement("TEMP",UnitMeasurement.UnitType.CELCIUS,100.0);
         UnitConversion unit1 = new UnitConversion(second);
         double v2=unit1.getConvertedValue(second.unitType);
+        Assert.assertTrue(first.equals(second));
         Assert.assertEquals(v1,v2,0);
     }
 

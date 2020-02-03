@@ -20,6 +20,7 @@ public class UnitAdditionTest {
         UnitMeasurement first=new UnitMeasurement("LENGTH",UnitMeasurement.UnitType.FEET,1.0);
         UnitMeasurement second=new UnitMeasurement("LENGTH",UnitMeasurement.UnitType.INCH,2.0);
         double add=new UnitAddition().getAddition(first,second);
+        Assert.assertTrue(first.equals(second));
         Assert.assertEquals(14.0,add,0.0);
     }
 
@@ -28,6 +29,7 @@ public class UnitAdditionTest {
         UnitMeasurement first=new UnitMeasurement("LENGTH",UnitMeasurement.UnitType.FEET,1.0);
         UnitMeasurement second=new UnitMeasurement("LENGTH",UnitMeasurement.UnitType.FEET,1.0);
         double add=new UnitAddition().getAddition(first,second);
+        Assert.assertTrue(first.equals(second));
         Assert.assertEquals(24.0,add,0.0);
     }
 
@@ -36,6 +38,7 @@ public class UnitAdditionTest {
         UnitMeasurement first=new UnitMeasurement("LENGTH",UnitMeasurement.UnitType.INCH,2.0);
         UnitMeasurement second=new UnitMeasurement("LENGTH",UnitMeasurement.UnitType.CENTIMETER,2.5);
         double add=new UnitAddition().getAddition(first,second);
+        Assert.assertTrue(first.equals(second));
         Assert.assertEquals(3.0,add,0.0);
     }
 
@@ -44,8 +47,10 @@ public class UnitAdditionTest {
         UnitMeasurement first=new UnitMeasurement("VOLUMN",UnitMeasurement.UnitType.GALLON,1.0);
         UnitMeasurement second=new UnitMeasurement("VOLUMN",UnitMeasurement.UnitType.LITRE,3.78);
         double add=new UnitAddition().getAddition(first,second);
-        Assert.assertEquals(7.5649999999999995,add,0.0);
+        Assert.assertTrue(first.equals(second));
+       Assert.assertEquals(7.5649999999999995,add,0.0);
     }
+
 
     @Test
     public void whenGivenLitreAndMiliLitre_ShouldReturnAdditionInLitre() throws quantityMeasureException {

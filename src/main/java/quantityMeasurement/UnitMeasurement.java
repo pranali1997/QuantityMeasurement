@@ -42,15 +42,6 @@ public class UnitMeasurement {
         }
     }
 
-    public boolean compare(UnitMeasurement that) {
-        if (this.unitType.equals(UnitType.FEET) && that.unitType.equals(UnitType.FEET))
-            return Double.compare(this.value, that.value) == 0;
-        if (this.unitType.equals(UnitType.FEET) && that.unitType.equals(UnitType.INCH))
-            return Double.compare(this.value, that.value) == 0;
-        return false;
-    }
-
-
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
