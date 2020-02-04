@@ -1,15 +1,10 @@
 package quantityMeasurement;
 
-import java.util.Objects;
-
 public class UnitMeasurement {
 
     public String unit;
     public UnitType unitType;
     public Double value;
-
-    double feet, inch;
-
 
     public enum UnitType {
         FEET("LENGTH"),
@@ -32,13 +27,13 @@ public class UnitMeasurement {
         }
     }
 
-    public UnitMeasurement(String unit, UnitType unitType, Double value) throws quantityMeasureException {
+    public UnitMeasurement(String unit, UnitType unitType, Double value) throws QuantityMeasureException {
         try {
             this.unitType = unitType;
             this.value = value;
             this.unit =unit;
         } catch (NullPointerException e) {
-            throw new quantityMeasureException(e.getMessage(), quantityMeasureException.ExceptionType.NULL_VALUE);
+            throw new QuantityMeasureException(e.getMessage(), QuantityMeasureException.ExceptionType.NULL_VALUE);
         }
     }
 
@@ -49,9 +44,7 @@ public class UnitMeasurement {
         UnitMeasurement that = (UnitMeasurement) o;
         unitType = that.unitType;
         if(unit.equals(that.unit)){
-        return  Double.compare(that.feet, feet) == 0 &&
-                Double.compare(that.inch, inch) == 0 &&
-                unitType == that.unitType;
+        return unitType == that.unitType;
         }
         return false;
     }

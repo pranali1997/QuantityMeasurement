@@ -1,12 +1,12 @@
 package quantityMeasurement;
 
-public class quantityMeasureException extends Exception  {
+public class QuantityMeasureException extends Exception  {
     public enum ExceptionType{
         NULL_VALUE;
     }
     public ExceptionType type;
 
-    public quantityMeasureException(String message, ExceptionType type) {
+    public QuantityMeasureException(String message, ExceptionType type) {
         super(message);
         this.type = type;
     }

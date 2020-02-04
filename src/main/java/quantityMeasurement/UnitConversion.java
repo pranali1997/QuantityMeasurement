@@ -7,8 +7,8 @@ import java.util.Map;
 
 public class UnitConversion {
 
-    private final Double length;
-    Map<UnitMeasurement.UnitType, Double > conversion=new HashMap<>();
+    private static Double length;
+    static Map<UnitMeasurement.UnitType, Double > conversion=new HashMap<>();
 
     public UnitConversion(UnitMeasurement first) {
         length=first.value;
@@ -26,9 +26,9 @@ public class UnitConversion {
         conversion.put(UnitMeasurement.UnitType.CELCIUS,1.0*2.12);
 
     }
-    public double getConvertedValue(UnitMeasurement.UnitType unitType) {
+    public static double getConvertedValue(UnitMeasurement.UnitType unitType) {
 
-        double v = this.length*this.conversion.get(unitType);
+        double v = length*conversion.get(unitType);
         return v;
     }
 

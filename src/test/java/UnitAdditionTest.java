@@ -2,12 +2,12 @@ import org.junit.Assert;
 import org.junit.Test;
 import quantityMeasurement.UnitAddition;
 import quantityMeasurement.UnitMeasurement;
-import quantityMeasurement.quantityMeasureException;
+import quantityMeasurement.QuantityMeasureException;
 
 public class UnitAdditionTest {
 
     @Test
-    public void whenGivenTwoInchValues_ShouldReturnAdditionInInch() throws quantityMeasureException {
+    public void whenGivenTwoInchValues_ShouldReturnAdditionInInch() throws QuantityMeasureException {
         UnitMeasurement first=new UnitMeasurement("LENGTH",UnitMeasurement.UnitType.INCH,2.0);
         UnitMeasurement second=new UnitMeasurement("LENGTH",UnitMeasurement.UnitType.INCH,2.0);
         double add=new UnitAddition().getAddition(first,second);
@@ -16,7 +16,7 @@ public class UnitAdditionTest {
     }
 
     @Test
-    public void whenGivenOneFeetTwoInchValues_ShouldReturnAdditionInInch() throws quantityMeasureException {
+    public void whenGivenOneFeetTwoInchValues_ShouldReturnAdditionInInch() throws QuantityMeasureException {
         UnitMeasurement first=new UnitMeasurement("LENGTH",UnitMeasurement.UnitType.FEET,1.0);
         UnitMeasurement second=new UnitMeasurement("LENGTH",UnitMeasurement.UnitType.INCH,2.0);
         double add=new UnitAddition().getAddition(first,second);
@@ -25,7 +25,7 @@ public class UnitAdditionTest {
     }
 
     @Test
-    public void whenGivenOneFeetOneFeetValues_ShouldReturnAdditionInInch() throws quantityMeasureException {
+    public void whenGivenOneFeetOneFeetValues_ShouldReturnAdditionInInch() throws QuantityMeasureException {
         UnitMeasurement first=new UnitMeasurement("LENGTH",UnitMeasurement.UnitType.FEET,1.0);
         UnitMeasurement second=new UnitMeasurement("LENGTH",UnitMeasurement.UnitType.FEET,1.0);
         double add=new UnitAddition().getAddition(first,second);
@@ -34,7 +34,7 @@ public class UnitAdditionTest {
     }
 
     @Test
-    public void whenGivenTwoInchTwoPointFiveCm_ShouldReturnAdditionInInch() throws quantityMeasureException {
+    public void whenGivenTwoInchTwoPointFiveCm_ShouldReturnAdditionInInch() throws QuantityMeasureException {
         UnitMeasurement first=new UnitMeasurement("LENGTH",UnitMeasurement.UnitType.INCH,2.0);
         UnitMeasurement second=new UnitMeasurement("LENGTH",UnitMeasurement.UnitType.CENTIMETER,2.5);
         double add=new UnitAddition().getAddition(first,second);
@@ -43,7 +43,7 @@ public class UnitAdditionTest {
     }
 
     @Test
-    public void whenGivenGallonAndLitre_ShouldReturnAdditionInLitre() throws quantityMeasureException {
+    public void whenGivenGallonAndLitre_ShouldReturnAdditionInLitre() throws QuantityMeasureException {
         UnitMeasurement first=new UnitMeasurement("VOLUMN",UnitMeasurement.UnitType.GALLON,1.0);
         UnitMeasurement second=new UnitMeasurement("VOLUMN",UnitMeasurement.UnitType.LITRE,3.78);
         double add=new UnitAddition().getAddition(first,second);
@@ -53,7 +53,7 @@ public class UnitAdditionTest {
 
 
     @Test
-    public void whenGivenLitreAndMiliLitre_ShouldReturnAdditionInLitre() throws quantityMeasureException {
+    public void whenGivenLitreAndMiliLitre_ShouldReturnAdditionInLitre() throws QuantityMeasureException {
         UnitMeasurement first=new UnitMeasurement("VOLUMN",UnitMeasurement.UnitType.LITRE,1.0);
         UnitMeasurement second=new UnitMeasurement("VOLUMN",UnitMeasurement.UnitType.MILILITER,1000.0);
         double add=new UnitAddition().getAddition(first,second);
@@ -62,7 +62,7 @@ public class UnitAdditionTest {
     }
 
     @Test
-    public void whenGivenTonneAndGram_ShouldReturnAdditionInKilogram() throws quantityMeasureException {
+    public void whenGivenTonneAndGram_ShouldReturnAdditionInKilogram() throws QuantityMeasureException {
         UnitMeasurement first=new UnitMeasurement("MASS",UnitMeasurement.UnitType.Tonne,1.0);
         UnitMeasurement second=new UnitMeasurement("MASS",UnitMeasurement.UnitType.GRAM,1000.0);
         double add=new UnitAddition().getAddition(first,second);
@@ -71,7 +71,7 @@ public class UnitAdditionTest {
     }
 
     @Test
-    public void whenGivenTonneAndGramWithLengthUnit_ShouldReturnAdditionInKilogram() throws quantityMeasureException {
+    public void whenGivenTonneAndGramWithLengthUnit_ShouldReturnAdditionInKilogram() throws QuantityMeasureException {
         UnitMeasurement first=new UnitMeasurement("MASS",UnitMeasurement.UnitType.Tonne,1.0);
         UnitMeasurement second=new UnitMeasurement("LENGTH",UnitMeasurement.UnitType.GRAM,1000.0);
         double add=new UnitAddition().getAddition(first,second);
@@ -80,7 +80,7 @@ public class UnitAdditionTest {
     }
 
     @Test
-    public void whenGivenOneFeetWithMassTwoInch_ShouldReturnAdditionInInch() throws quantityMeasureException {
+    public void whenGivenOneFeetWithMassTwoInch_ShouldReturnAdditionInInch() throws QuantityMeasureException {
         UnitMeasurement first=new UnitMeasurement("MASS",UnitMeasurement.UnitType.FEET,1.0);
         UnitMeasurement second=new UnitMeasurement("LENGTH",UnitMeasurement.UnitType.INCH,2.0);
         double add=new UnitAddition().getAddition(first,second);
